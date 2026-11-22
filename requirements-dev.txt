@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest>=8.0
+# Optional: embedded PostgreSQL for running tests without Docker
+pgserver>=0.1.4
+# Optional: used to generate README screenshots (drives the locally-installed Edge/Chrome)
+playwright>=1.44
