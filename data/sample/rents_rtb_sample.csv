@@ -1,0 +1,41 @@
+location,county,geography_type,year,quarter,bedrooms,property_type,avg_monthly_rent
+Cavan,Cavan,county,2025,4,Four plus bed,Semi detached house,1387.2
+Clare,Clare,county,2025,4,Four plus bed,Semi detached house,1502.26
+Cork,Cork,county,2025,4,Four plus bed,Semi detached house,2127.64
+Cork City,Cork,city,2025,4,Four plus bed,Semi detached house,2370.97
+Donegal,Donegal,county,2025,4,Four plus bed,Semi detached house,1148.68
+Dublin,Dublin,county,2025,4,Four plus bed,Semi detached house,3235.25
+Galway,Galway,county,2025,4,Four plus bed,Semi detached house,2062.99
+Galway City,Galway,city,2025,4,Four plus bed,Semi detached house,2356.55
+Kerry,Kerry,county,2025,4,Four plus bed,Semi detached house,1406.01
+Kildare,Kildare,county,2025,4,Four plus bed,Semi detached house,2330.76
+Laois,Laois,county,2025,4,Four plus bed,Semi detached house,1465.15
+Limerick,Limerick,county,2025,4,Four plus bed,Semi detached house,2190.84
+Limerick City,Limerick,city,2025,4,Four plus bed,Semi detached house,2237.87
+Longford,Longford,county,2025,4,Four plus bed,Semi detached house,1238.35
+Louth,Louth,county,2025,4,Four plus bed,Semi detached house,1961.02
+Mayo,Mayo,county,2025,4,Four plus bed,Semi detached house,1265.26
+Meath,Meath,county,2025,4,Four plus bed,Semi detached house,1780.37
+Monaghan,Monaghan,county,2025,4,Four plus bed,Semi detached house,1235.87
+Offaly,Offaly,county,2025,4,Four plus bed,Semi detached house,1482.33
+Roscommon,Roscommon,county,2025,4,Four plus bed,Semi detached house,1234.89
+Sligo,Sligo,county,2025,4,Four plus bed,Semi detached house,1403.55
+Tipperary,Tipperary,county,2025,4,Four plus bed,Semi detached house,1371.34
+Waterford,Waterford,county,2025,4,Four plus bed,Semi detached house,1897.04
+Waterford City,Waterford,city,2025,4,Four plus bed,Semi detached house,2080.25
+Westmeath,Westmeath,county,2025,4,Four plus bed,Semi detached house,1495.51
+Wexford,Wexford,county,2025,4,Four plus bed,Semi detached house,1567.67
+Wicklow,Wicklow,county,2025,4,Four plus bed,Semi detached house,2428.13
+Cork,Cork,county,2025,4,Four plus bed,Terrace house,2498.29
+Cork City,Cork,city,2025,4,Four plus bed,Terrace house,2746.3
+Dublin,Dublin,county,2025,4,Four plus bed,Terrace house,3278.01
+Galway,Galway,county,2025,4,Four plus bed,Terrace house,2405.2
+Galway City,Galway,city,2025,4,Four plus bed,Terrace house,2491.2
+Limerick,Limerick,county,2025,4,Four plus bed,Terrace house,2178.12
+Limerick City,Limerick,city,2025,4,Four plus bed,Terrace house,2369.17
+Louth,Louth,county,2025,4,Four plus bed,Terrace house,1825.1
+Cork,Cork,county,2025,4,Four plus bed,Apartment,2437.98
+Cork City,Cork,city,2025,4,Four plus bed,Apartment,2591.34
+Dublin,Dublin,county,2025,4,Four plus bed,Apartment,3115.1
+Galway,Galway,county,2025,4,Four plus bed,Apartment,2326.96
+Limerick,Limerick,county,2025,4,Four plus bed,Apartment,2333.29
