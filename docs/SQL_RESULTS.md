@@ -225,11 +225,11 @@ _90 rows returned_
 
 | report_month   |   persons |   families |   child_dependants |   persons_12_months_earlier | yoy_change_pct   |   rolling_3m_avg |
 |:---------------|----------:|-----------:|-------------------:|----------------------------:|:-----------------|-----------------:|
-| 2019-01-01     |      3023 |       1614 |                918 |                         nan |                  |             3023 |
-| 2019-02-01     |      3154 |       1707 |                978 |                         nan |                  |             3089 |
-| 2019-03-01     |      3184 |       1733 |               1015 |                         nan |                  |             3120 |
-| 2019-04-01     |      3208 |       1729 |               1025 |                         nan |                  |             3182 |
-| 2019-05-01     |      3115 |       1700 |                978 |                         nan |                  |             3169 |
+| 2019-01-01     |      9987 |       1614 |               3624 |                         nan |                  |             9987 |
+| 2019-02-01     |     10264 |       1707 |               3784 |                         nan |                  |            10126 |
+| 2019-03-01     |     10305 |       1733 |               3821 |                         nan |                  |            10185 |
+| 2019-04-01     |     10378 |       1729 |               3794 |                         nan |                  |            10316 |
+| 2019-05-01     |     10253 |       1700 |               3749 |                         nan |                  |            10312 |
 
 ## Q16_homelessness_per_10000_by_region_latest
 **Question:** Which Department regions have the highest homelessness relative to population in the latest report?
