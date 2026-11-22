@@ -1,0 +1,48 @@
+# HomeScope Ireland - local stack
+#   docker compose up -d db                    # PostgreSQL only (then run the loader from your venv)
+#   docker compose --profile etl run --rm etl  # clean + load all data into PostgreSQL inside Docker
+#   docker compose up -d --build               # PostgreSQL + dashboard on http://localhost:8501
+# Credentials come from .env (copy .env.example). Nothing secret is stored in this file.
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: homescope-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-homescope}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?copy .env.example to .env and set POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:-homescope}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - homescope_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-homescope} -d ${POSTGRES_DB:-homescope}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  etl:
+    build: .
+    profiles: ["etl"]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-homescope}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-homescope}
+    volumes:
+      - ./data:/app/data
+    command: sh -c "python -m src.data_collection.downloader && python -m src.data_cleaning.pipeline && python -m src.database.loader --reset"
+
+  dashboard:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-homescope}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-homescope}
+      HOMESCOPE_DATA_BACKEND: auto
+    ports:
+      - "8501:8501"
+
+volumes:
+  homescope_pgdata:
