@@ -42,7 +42,7 @@ def _fmt(n: float, d: int = 0) -> str:
 
 
 def _names(items, k=3) -> str:
-    items = list(items)[:k]
+    items = list(dict.fromkeys(items))[:k]          # de-duplicate (e.g. several Dublin local authorities) keeping order
     return ", ".join(items[:-1]) + f" and {items[-1]}" if len(items) > 1 else (items[0] if items else "")
 
 

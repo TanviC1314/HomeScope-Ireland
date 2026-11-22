@@ -97,7 +97,7 @@ with r2b:
     pp = pd.concat(parts)
     pp = pp[(pp["period"].dt.year >= max(yr[0], 2005)) & (pp["period"].dt.year <= yr[1] + (1 if partial else 0))]
     fig = ch.line(pp, "period", "rppi_index", "series", "Residential property price index (2015 = 100)", ytitle="Index", hover_fmt=",.1f",
-                  color_map={"National": T.CATEGORICAL[0], "Dublin": T.CATEGORICAL[1], "Outside Dublin": T.CATEGORICAL[2]})
+                  color_map={"Dublin": T.CATEGORICAL[0], "National": T.CATEGORICAL[1], "Outside Dublin": T.CATEGORICAL[2]})   # Dublin = blue everywhere
     fig.add_hline(y=100, line=dict(color=T.MUTED, width=1, dash="dot"))
     ch.show(fig, "nat_prices")
     T.caption("CSO HPM09. An index, not a euro price.")

@@ -65,7 +65,7 @@ with p1:
     if pp.empty:
         T.note("The CSO publishes this dwelling type only for some areas (e.g. regional series cover houses only).", "warn")
     else:
-        gmap = ch.entity_colors(sel_geo, preferred=["National", "Dublin", "National excluding Dublin"])
+        gmap = ch.entity_colors(sel_geo, preferred=["Dublin", "National", "National excluding Dublin"])   # Dublin keeps its blue
         fig = ch.line(pp, "period", "rppi_index", "geography", f"Residential property price index - {dtype}", color_map=gmap, ytitle="Index (2015 = 100)")
         fig.add_hline(y=100, line=dict(color=T.MUTED, width=1, dash="dot"))
         ch.show(fig, "af_prices")
@@ -78,11 +78,11 @@ with p2:
         "Area": ["National", "Dublin", "National excluding Dublin"],
         "Latest index": [s["latest_index"], d["latest_index"], x["latest_index"]],
         "12-month change (%)": [s["change_12m_pct"], d["change_12m_pct"], x["change_12m_pct"]],
-        "vs 2015 average (%)": [s["index_vs_2015_pct"], d["index_vs_2015_pct"], x["index_vs_2015_pct"]],
-        "vs pre-crisis peak (%)": [s["index_vs_prior_peak_pct"], d["index_vs_prior_peak_pct"], x["index_vs_prior_peak_pct"]]}).round(1)
+        "vs 2015 (%)": [s["index_vs_2015_pct"], d["index_vs_2015_pct"], x["index_vs_2015_pct"]],
+        "vs peak (%)": [s["index_vs_prior_peak_pct"], d["index_vs_prior_peak_pct"], x["index_vs_prior_peak_pct"]]}).round(1)
     st.markdown(f"**Summary - {s['latest_period']:%B %Y}**")
     ch.show_df(rows)
-    T.caption("Pre-crisis peak = highest index value before 2015 for that series.")
+    T.caption("'vs 2015' = latest index minus 100. 'vs peak' = change from the highest index value before 2015 (pre-crisis peak) for that series.")
 
 # ------------------------------------------------------------------------------ incomes + burden
 st.subheader("Income and the rent burden")
