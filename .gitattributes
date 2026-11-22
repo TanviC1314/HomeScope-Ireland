@@ -1,0 +1,6 @@
+# Keep source files LF everywhere; never touch the bytes of raw/processed data (checksums are recorded in MANIFEST.json)
+* text=auto eol=lf
+data/raw/** -text
+data/processed/** -text
+*.geojson -text
+*.csv -text
