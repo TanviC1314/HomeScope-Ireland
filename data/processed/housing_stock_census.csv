@@ -1,0 +1,61 @@
+area_name,county,census_year,total_stock,occupied,temporarily_absent,vacant,holiday_home,vacancy_rate_pct
+Carlow County Council,Carlow,2016,23274.0,20584.0,528.0,1864.0,298.0,8.01
+Carlow County Council,Carlow,2022,24557.0,22282.0,267.0,1724.0,284.0,7.02
+Cavan County Council,Cavan,2016,33585.0,26925.0,785.0,4829.0,1046.0,14.38
+Cavan County Council,Cavan,2022,34427.0,28890.0,440.0,4023.0,1074.0,11.69
+Clare County Council,Clare,2016,55779.0,43649.0,1205.0,6104.0,4821.0,10.94
+Clare County Council,Clare,2022,57665.0,46784.0,881.0,5079.0,4921.0,8.81
+Cork City and Cork County,Cork,2016,229495.0,196675.0,5611.0,19937.0,7272.0,8.69
+Cork City and Cork County,Cork,2022,240942.0,212288.0,4155.0,17055.0,7444.0,7.08
+Donegal County Council,Donegal,2016,83931.0,58964.0,1975.0,11704.0,11288.0,13.94
+Donegal County Council,Donegal,2022,85990.0,62357.0,1533.0,9615.0,12485.0,11.18
+Dublin City Council,Dublin,2016,240553.0,213224.0,7883.0,18424.0,1022.0,7.66
+Dublin City Council,Dublin,2022,250632.0,226912.0,4906.0,18024.0,790.0,7.19
+Dún Laoghaire-Rathdown County Council,Dublin,2016,86962.0,79081.0,3093.0,4596.0,192.0,5.29
+Dún Laoghaire-Rathdown County Council,Dublin,2022,93257.0,85590.0,2372.0,4851.0,444.0,5.2
+Fingal County Council,Dublin,2016,104851.0,96899.0,2719.0,4944.0,289.0,4.72
+Fingal County Council,Dublin,2022,115358.0,107920.0,2113.0,4884.0,441.0,4.23
+Galway City Council,Galway,2016,33847.0,29313.0,1368.0,2841.0,325.0,8.39
+Galway City Council,Galway,2022,35436.0,31221.0,763.0,2738.0,714.0,7.73
+Galway County Council,Galway,2016,78207.0,63055.0,1712.0,9646.0,3794.0,12.33
+Galway County Council,Galway,2022,82337.0,68194.0,1054.0,8803.0,4286.0,10.69
+Kerry County Council,Kerry,2016,74094.0,54891.0,1456.0,9691.0,8056.0,13.08
+Kerry County Council,Kerry,2022,77305.0,58798.0,1124.0,8487.0,8896.0,10.98
+Kildare County Council,Kildare,2016,80158.0,73629.0,1817.0,4560.0,152.0,5.69
+Kildare County Council,Kildare,2022,88997.0,82787.0,1480.0,4528.0,202.0,5.09
+Kilkenny County Council,Kilkenny,2016,39226.0,34847.0,833.0,2995.0,551.0,7.64
+Kilkenny County Council,Kilkenny,2022,40996.0,36821.0,488.0,3140.0,547.0,7.66
+Laois County Council,Laois,2016,32794.0,29075.0,559.0,3007.0,153.0,9.17
+Laois County Council,Laois,2022,34443.0,31196.0,475.0,2576.0,196.0,7.48
+Leitrim County Council,Leitrim,2016,18051.0,12486.0,339.0,3589.0,1637.0,19.88
+Leitrim County Council,Leitrim,2022,18482.0,13713.0,258.0,2807.0,1704.0,15.19
+Limerick City and County Council,Limerick,2016,82112.0,71494.0,2434.0,7752.0,432.0,9.44
+Limerick City and County Council,Limerick,2022,85363.0,76756.0,1315.0,6641.0,651.0,7.78
+Longford County Council,Longford,2016,18591.0,15146.0,343.0,2824.0,278.0,15.19
+Longford County Council,Longford,2022,19195.0,16270.0,209.0,2338.0,378.0,12.18
+Louth County Council,Louth,2016,51399.0,45528.0,1158.0,3952.0,761.0,7.69
+Louth County Council,Louth,2022,54842.0,49533.0,946.0,3582.0,781.0,6.53
+Mayo County Council,Mayo,2016,65921.0,49101.0,1368.0,10597.0,4855.0,16.08
+Mayo County Council,Mayo,2022,68282.0,52421.0,952.0,8922.0,5987.0,13.07
+Meath County Council,Meath,2016,70649.0,63989.0,1785.0,4640.0,235.0,6.57
+Meath County Council,Meath,2022,78759.0,72721.0,1291.0,4416.0,331.0,5.61
+Monaghan County Council,Monaghan,2016,25311.0,21691.0,494.0,2884.0,242.0,11.39
+Monaghan County Council,Monaghan,2022,26339.0,22944.0,373.0,2793.0,229.0,10.6
+Offaly County Council,Offaly,2016,30740.0,27260.0,596.0,2640.0,244.0,8.59
+Offaly County Council,Offaly,2022,31851.0,28773.0,374.0,2491.0,213.0,7.82
+Roscommon County Council,Roscommon,2016,31285.0,24081.0,656.0,5323.0,1225.0,17.01
+Roscommon County Council,Roscommon,2022,32129.0,26097.0,426.0,4279.0,1327.0,13.32
+Sligo County Council,Sligo,2016,32764.0,25048.0,1145.0,4727.0,1844.0,14.43
+Sligo County Council,Sligo,2022,33711.0,27146.0,578.0,3954.0,2033.0,11.73
+South Dublin County Council,Dublin,2016,98387.0,92564.0,2293.0,3495.0,35.0,3.55
+South Dublin County Council,Dublin,2022,106074.0,100460.0,1634.0,3899.0,81.0,3.68
+Tipperary County Council,Tipperary,2016,69106.0,59284.0,1320.0,7493.0,1009.0,10.84
+Tipperary County Council,Tipperary,2022,70608.0,62342.0,829.0,6344.0,1093.0,8.98
+Waterford City and County Council,Waterford,2016,52491.0,43719.0,1436.0,5194.0,2142.0,9.9
+Waterford City and County Council,Waterford,2022,54847.0,47976.0,853.0,3871.0,2147.0,7.06
+Westmeath County Council,Westmeath,2016,36890.0,31858.0,1023.0,3728.0,281.0,10.11
+Westmeath County Council,Westmeath,2022,38189.0,34133.0,628.0,3095.0,333.0,8.1
+Wexford County Council,Wexford,2016,68206.0,54232.0,1427.0,5918.0,6629.0,8.68
+Wexford County Council,Wexford,2022,71479.0,59367.0,1014.0,5140.0,5958.0,7.19
+Wicklow County Council,Wicklow,2016,54986.0,49161.0,1371.0,3414.0,1040.0,6.21
+Wicklow County Council,Wicklow,2022,59629.0,54246.0,1063.0,3334.0,986.0,5.59

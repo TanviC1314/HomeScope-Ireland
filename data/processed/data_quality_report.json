@@ -1,0 +1,658 @@
+[
+  {
+    "dataset": "NDQ06",
+    "check": "single + scheme + apartment = all house types",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 288,115.00 vs published 288,115.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "NDQ06",
+    "check": "sum of local authorities = published Ireland total",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 288,115.00 vs published 288,115.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "NDQ06",
+    "check": "local authority names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 31 local authorities",
+    "action": ""
+  },
+  {
+    "dataset": "NDQ06",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['value']",
+    "action": ""
+  },
+  {
+    "dataset": "NDQ06",
+    "check": "range check 'value' [0, 20000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "NDQ06",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['la_name', 'year', 'quarter', 'dwelling_type']",
+    "action": ""
+  },
+  {
+    "dataset": "NDQ06",
+    "check": "reporting period",
+    "status": "info",
+    "affected": 0,
+    "detail": "quarterly 2011Q1 to 2026Q3; 2026 is a partial calendar year",
+    "action": "annual totals flag partial years (is_partial_year)"
+  },
+  {
+    "dataset": "HSM13",
+    "check": "sum of local authorities = published Ireland total (units)",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 317,694.00 vs published 317,693.00 (difference +1.00)",
+    "action": ""
+  },
+  {
+    "dataset": "HSM13",
+    "check": "local authority names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 31 local authorities",
+    "action": ""
+  },
+  {
+    "dataset": "HSM13",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['notices', 'units', 'one_off_units']",
+    "action": ""
+  },
+  {
+    "dataset": "HSM13",
+    "check": "range check 'units' [0, 20000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "HSM13",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['la_name', 'period']",
+    "action": ""
+  },
+  {
+    "dataset": "HSM13",
+    "check": "reporting period",
+    "status": "info",
+    "affected": 0,
+    "detail": "monthly 2014-03 to 2026-10",
+    "action": "annual totals flag partial years"
+  },
+  {
+    "dataset": "BHA13",
+    "check": "2019: sum of 8 NUTS3 regions = Ireland (units, houses + apartments)",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 38,461.00 vs published 38,461.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "BHA13",
+    "check": "one-off + multi-development houses = all houses (units)",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 150,969.00 vs published 150,969.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "BHA13",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['units']",
+    "action": ""
+  },
+  {
+    "dataset": "BHA13",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['region', 'year', 'dwelling_type']",
+    "action": ""
+  },
+  {
+    "dataset": "BHA13",
+    "check": "range check 'units' [0, 40000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "BHA13",
+    "check": "geographic grain",
+    "status": "info",
+    "affected": 0,
+    "detail": "planning permissions are published by NUTS3 region only",
+    "action": "comparisons with completions are made at NUTS3 level (counties aggregated)"
+  },
+  {
+    "dataset": "F1003",
+    "check": "county names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 26 counties",
+    "action": ""
+  },
+  {
+    "dataset": "F1003",
+    "check": "2011: sum of counties = State population",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 4,588,252.00 vs published 4,588,252.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F1003",
+    "check": "2016: sum of counties = State population",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 4,761,865.00 vs published 4,761,865.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F1003",
+    "check": "2022: sum of counties = State population",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 5,149,139.00 vs published 5,149,139.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F1003",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['county', 'census_year']",
+    "action": ""
+  },
+  {
+    "dataset": "PEA01/PEA15",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['population_thousand']",
+    "action": ""
+  },
+  {
+    "dataset": "PEA01/PEA15",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['year']",
+    "action": ""
+  },
+  {
+    "dataset": "PEA01/PEA15",
+    "check": "reference period",
+    "status": "info",
+    "affected": 0,
+    "detail": "April estimates 1950-2026",
+    "action": "latest year(s) are provisional CSO estimates"
+  },
+  {
+    "dataset": "F2001",
+    "check": "2022: sum of counties = Ireland households",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 1,836,728.00 vs published 1,836,728.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F2001",
+    "check": "range check 'avg_household_size' [1.5, 5.0]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "F2001",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['county', 'census_year']",
+    "action": ""
+  },
+  {
+    "dataset": "F2020",
+    "check": "2022: sum of areas = State total housing stock",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 2,112,121.00 vs published 2,112,121.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F2020",
+    "check": "occupied+absent+vacant+holiday = total stock",
+    "status": "pass",
+    "affected": 0,
+    "detail": "max difference 0 dwellings",
+    "action": "none (differences, if any, are other unoccupied categories)"
+  },
+  {
+    "dataset": "F2020",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['area_name', 'census_year']",
+    "action": ""
+  },
+  {
+    "dataset": "F2004",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['county', 'census_year', 'tenure']",
+    "action": ""
+  },
+  {
+    "dataset": "F2004",
+    "check": "tenure categories sum to all occupancy types",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 1,836,728.00 vs published 1,836,728.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F2004",
+    "check": "sum of counties = Ireland (all households)",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 1,836,728.00 vs published 1,836,728.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F2004",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['households']",
+    "action": ""
+  },
+  {
+    "dataset": "VAC14",
+    "check": "local authority names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 31 local authorities",
+    "action": ""
+  },
+  {
+    "dataset": "VAC14",
+    "check": "published vacancy rate = vacant / stock",
+    "status": "pass",
+    "affected": 0,
+    "detail": "max difference 0.050 percentage points (rounding)",
+    "action": ""
+  },
+  {
+    "dataset": "VAC14",
+    "check": "range check 'vacancy_rate_pct' [0, 30]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "VAC14",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['la_name', 'year', 'quarter']",
+    "action": ""
+  },
+  {
+    "dataset": "VAC23",
+    "check": "local authority names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 31 local authorities",
+    "action": ""
+  },
+  {
+    "dataset": "VAC23",
+    "check": "published vacancy rate = vacant / stock",
+    "status": "pass",
+    "affected": 0,
+    "detail": "max difference 0.049 percentage points (rounding)",
+    "action": ""
+  },
+  {
+    "dataset": "VAC23",
+    "check": "range check 'vacancy_rate_pct' [0, 30]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "VAC23",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['la_name', 'year', 'quarter']",
+    "action": ""
+  },
+  {
+    "dataset": "F2014",
+    "check": "local authority names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 31 local authorities",
+    "action": ""
+  },
+  {
+    "dataset": "F2014",
+    "check": "reasons sum to total vacancies",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 163,433.00 vs published 163,433.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F2014",
+    "check": "sum of local authorities = Ireland total vacancies",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 163,433.00 vs published 163,433.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "F2014",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['la_name', 'reason']",
+    "action": ""
+  },
+  {
+    "dataset": "RIQ02",
+    "check": "location names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "31 locations: 26 counties + 5 city-level areas",
+    "action": ""
+  },
+  {
+    "dataset": "RIQ02",
+    "check": "missing values in 'avg_monthly_rent'",
+    "status": "info",
+    "affected": 21836,
+    "detail": "no published average for that location/bedroom/property-type/quarter combination (small samples)",
+    "action": "rows removed from the analytical table; absence is NOT treated as zero"
+  },
+  {
+    "dataset": "RIQ02",
+    "check": "range check 'avg_monthly_rent' [150, 6000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "RIQ02",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['location', 'year', 'quarter', 'bedrooms', 'property_type']",
+    "action": ""
+  },
+  {
+    "dataset": "RIQ02",
+    "check": "reporting period",
+    "status": "info",
+    "affected": 0,
+    "detail": "quarterly 2007Q4 to 2025Q4",
+    "action": "RTB figures describe standardised average rents for tenancies registered in the quarter"
+  },
+  {
+    "dataset": "HPM09",
+    "check": "missing values in 'rppi_index'",
+    "status": "info",
+    "affected": 0,
+    "detail": "index not published for some sub-national series in early years",
+    "action": "rows without an index removed"
+  },
+  {
+    "dataset": "HPM09",
+    "check": "range check 'rppi_index' [20, 400]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "HPM09",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['geography', 'dwelling_type', 'period']",
+    "action": ""
+  },
+  {
+    "dataset": "HPM09",
+    "check": "measure",
+    "status": "info",
+    "affected": 0,
+    "detail": "index (base 2015=100) - not euro prices; county euro prices are not published by the CSO",
+    "action": ""
+  },
+  {
+    "dataset": "RAA02",
+    "check": "range check 'disposable_income_per_person' [5000, 80000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "RAA02",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['county', 'year']",
+    "action": ""
+  },
+  {
+    "dataset": "RAA02",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['disposable_income_per_person']",
+    "action": ""
+  },
+  {
+    "dataset": "RAA02",
+    "check": "2022: sum of county disposable household income = Ireland (EUR m)",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 133,624.88 vs published 133,624.88 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "TRS38",
+    "check": "local authority names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 31 local authorities",
+    "action": ""
+  },
+  {
+    "dataset": "TRS38",
+    "check": "range check 'median_rent_pct_income' [0, 100]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "TRS38",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['la_name', 'year']",
+    "action": ""
+  },
+  {
+    "dataset": "TRS38",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['median_rent_pct_income']",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "years without county breakdown",
+    "status": "info",
+    "affected": 6,
+    "detail": "county values not published for [2005, 2008, 2011, 2013, 2018, 2019]; only the national total exists for those years",
+    "action": "county table restricted to years with county data; national totals kept separately"
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2016: sum of counties = All Counties",
+    "status": "info",
+    "affected": 1,
+    "detail": "computed 44,875.00 vs published 46,294.00 (difference -1,419.00). Published All-Counties total differs from the sum of county values in the source; county values are used for county analysis, the All-Counties total for the national trend.",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2017: sum of counties = All Counties",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 42,911.00 vs published 42,911.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2020: sum of counties = All Counties",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 24,646.00 vs published 24,646.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2021: sum of counties = All Counties",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 21,932.00 vs published 21,932.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2022: sum of counties = All Counties",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 21,086.00 vs published 21,086.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2023: sum of counties = All Counties",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 20,932.00 vs published 20,932.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "2024: sum of counties = All Counties",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 19,088.00 vs published 19,088.00 (difference +0.00)",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['county', 'year']",
+    "action": ""
+  },
+  {
+    "dataset": "SCA10",
+    "check": "coverage",
+    "status": "info",
+    "affected": 0,
+    "detail": "households with children only; excludes single adults and couples without children",
+    "action": "labelled as 'families with children' everywhere it is displayed"
+  },
+  {
+    "dataset": "HOMELESSNESS_MONTHLY",
+    "check": "non-region rows (totals) removed",
+    "status": "pass",
+    "affected": 0,
+    "detail": "regions standardised to 9 Dept. regions",
+    "action": ""
+  },
+  {
+    "dataset": "HOMELESSNESS_MONTHLY",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['region', 'report_month']",
+    "action": ""
+  },
+  {
+    "dataset": "HOMELESSNESS_MONTHLY",
+    "check": "range check 'adults_total' [0, 20000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
+    "dataset": "HOMELESSNESS_MONTHLY",
+    "check": "9 regions in every month",
+    "status": "pass",
+    "affected": 0,
+    "detail": "90 monthly reports 2019-01 to 2026-09",
+    "action": ""
+  },
+  {
+    "dataset": "HOMELESSNESS_MONTHLY",
+    "check": "month gaps",
+    "status": "info",
+    "affected": 3,
+    "detail": "missing months: ['2023-06', '2023-07', '2023-08']",
+    "action": "gaps are left as gaps"
+  },
+  {
+    "dataset": "HOMELESSNESS_MONTHLY",
+    "check": "column harmonisation",
+    "status": "info",
+    "affected": 0,
+    "detail": "report layouts changed over time (e.g. citizenship columns added 2022; 'Child Dependants' renamed)",
+    "action": "common columns harmonised; optional columns kept where present"
+  }
+]

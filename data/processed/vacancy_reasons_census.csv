@@ -1,0 +1,311 @@
+la_name,county,reason,vacant_dwellings
+Carlow County Council,Carlow,Rental Property,300
+Carlow County Council,Carlow,Renovation,250
+Carlow County Council,Carlow,With Relatives,93
+Carlow County Council,Carlow,Deceased,278
+Carlow County Council,Carlow,Nursing Home / Hospital,141
+Carlow County Council,Carlow,For Sale,176
+Carlow County Council,Carlow,Farmhouse,116
+Carlow County Council,Carlow,Emigrated,15
+Carlow County Council,Carlow,New Build,69
+Carlow County Council,Carlow,Other reason / Not Stated,286
+Dublin City Council,Dublin,Rental Property,5059
+Dublin City Council,Dublin,Renovation,3298
+Dublin City Council,Dublin,With Relatives,316
+Dublin City Council,Dublin,Deceased,1688
+Dublin City Council,Dublin,Nursing Home / Hospital,1478
+Dublin City Council,Dublin,For Sale,2086
+Dublin City Council,Dublin,Farmhouse,0
+Dublin City Council,Dublin,Emigrated,144
+Dublin City Council,Dublin,New Build,221
+Dublin City Council,Dublin,Other reason / Not Stated,3734
+Dún Laoghaire-Rathdown County Council,Dublin,Rental Property,1252
+Dún Laoghaire-Rathdown County Council,Dublin,Renovation,810
+Dún Laoghaire-Rathdown County Council,Dublin,With Relatives,95
+Dún Laoghaire-Rathdown County Council,Dublin,Deceased,453
+Dún Laoghaire-Rathdown County Council,Dublin,Nursing Home / Hospital,542
+Dún Laoghaire-Rathdown County Council,Dublin,For Sale,729
+Dún Laoghaire-Rathdown County Council,Dublin,Farmhouse,8
+Dún Laoghaire-Rathdown County Council,Dublin,Emigrated,64
+Dún Laoghaire-Rathdown County Council,Dublin,New Build,121
+Dún Laoghaire-Rathdown County Council,Dublin,Other reason / Not Stated,777
+Fingal County Council,Dublin,Rental Property,1206
+Fingal County Council,Dublin,Renovation,765
+Fingal County Council,Dublin,With Relatives,91
+Fingal County Council,Dublin,Deceased,406
+Fingal County Council,Dublin,Nursing Home / Hospital,341
+Fingal County Council,Dublin,For Sale,830
+Fingal County Council,Dublin,Farmhouse,41
+Fingal County Council,Dublin,Emigrated,55
+Fingal County Council,Dublin,New Build,275
+Fingal County Council,Dublin,Other reason / Not Stated,874
+South Dublin County Council,Dublin,Rental Property,1058
+South Dublin County Council,Dublin,Renovation,512
+South Dublin County Council,Dublin,With Relatives,100
+South Dublin County Council,Dublin,Deceased,432
+South Dublin County Council,Dublin,Nursing Home / Hospital,371
+South Dublin County Council,Dublin,For Sale,601
+South Dublin County Council,Dublin,Farmhouse,27
+South Dublin County Council,Dublin,Emigrated,34
+South Dublin County Council,Dublin,New Build,56
+South Dublin County Council,Dublin,Other reason / Not Stated,708
+Kildare County Council,Kildare,Rental Property,986
+Kildare County Council,Kildare,Renovation,653
+Kildare County Council,Kildare,With Relatives,139
+Kildare County Council,Kildare,Deceased,479
+Kildare County Council,Kildare,Nursing Home / Hospital,267
+Kildare County Council,Kildare,For Sale,735
+Kildare County Council,Kildare,Farmhouse,128
+Kildare County Council,Kildare,Emigrated,69
+Kildare County Council,Kildare,New Build,236
+Kildare County Council,Kildare,Other reason / Not Stated,836
+Kilkenny County Council,Kilkenny,Rental Property,584
+Kilkenny County Council,Kilkenny,Renovation,478
+Kilkenny County Council,Kilkenny,With Relatives,104
+Kilkenny County Council,Kilkenny,Deceased,581
+Kilkenny County Council,Kilkenny,Nursing Home / Hospital,252
+Kilkenny County Council,Kilkenny,For Sale,299
+Kilkenny County Council,Kilkenny,Farmhouse,248
+Kilkenny County Council,Kilkenny,Emigrated,58
+Kilkenny County Council,Kilkenny,New Build,92
+Kilkenny County Council,Kilkenny,Other reason / Not Stated,444
+Laois County Council,Laois,Rental Property,451
+Laois County Council,Laois,Renovation,332
+Laois County Council,Laois,With Relatives,109
+Laois County Council,Laois,Deceased,429
+Laois County Council,Laois,Nursing Home / Hospital,136
+Laois County Council,Laois,For Sale,285
+Laois County Council,Laois,Farmhouse,200
+Laois County Council,Laois,Emigrated,24
+Laois County Council,Laois,New Build,169
+Laois County Council,Laois,Other reason / Not Stated,441
+Longford County Council,Longford,Rental Property,537
+Longford County Council,Longford,Renovation,269
+Longford County Council,Longford,With Relatives,57
+Longford County Council,Longford,Deceased,383
+Longford County Council,Longford,Nursing Home / Hospital,132
+Longford County Council,Longford,For Sale,196
+Longford County Council,Longford,Farmhouse,320
+Longford County Council,Longford,Emigrated,21
+Longford County Council,Longford,New Build,81
+Longford County Council,Longford,Other reason / Not Stated,342
+Louth County Council,Louth,Rental Property,803
+Louth County Council,Louth,Renovation,536
+Louth County Council,Louth,With Relatives,88
+Louth County Council,Louth,Deceased,514
+Louth County Council,Louth,Nursing Home / Hospital,285
+Louth County Council,Louth,For Sale,474
+Louth County Council,Louth,Farmhouse,101
+Louth County Council,Louth,Emigrated,69
+Louth County Council,Louth,New Build,127
+Louth County Council,Louth,Other reason / Not Stated,585
+Meath County Council,Meath,Rental Property,959
+Meath County Council,Meath,Renovation,560
+Meath County Council,Meath,With Relatives,164
+Meath County Council,Meath,Deceased,605
+Meath County Council,Meath,Nursing Home / Hospital,297
+Meath County Council,Meath,For Sale,568
+Meath County Council,Meath,Farmhouse,241
+Meath County Council,Meath,Emigrated,65
+Meath County Council,Meath,New Build,249
+Meath County Council,Meath,Other reason / Not Stated,708
+Offaly County Council,Offaly,Rental Property,435
+Offaly County Council,Offaly,Renovation,351
+Offaly County Council,Offaly,With Relatives,85
+Offaly County Council,Offaly,Deceased,508
+Offaly County Council,Offaly,Nursing Home / Hospital,202
+Offaly County Council,Offaly,For Sale,258
+Offaly County Council,Offaly,Farmhouse,202
+Offaly County Council,Offaly,Emigrated,50
+Offaly County Council,Offaly,New Build,81
+Offaly County Council,Offaly,Other reason / Not Stated,319
+Westmeath County Council,Westmeath,Rental Property,677
+Westmeath County Council,Westmeath,Renovation,388
+Westmeath County Council,Westmeath,With Relatives,123
+Westmeath County Council,Westmeath,Deceased,525
+Westmeath County Council,Westmeath,Nursing Home / Hospital,202
+Westmeath County Council,Westmeath,For Sale,356
+Westmeath County Council,Westmeath,Farmhouse,173
+Westmeath County Council,Westmeath,Emigrated,44
+Westmeath County Council,Westmeath,New Build,78
+Westmeath County Council,Westmeath,Other reason / Not Stated,529
+Wexford County Council,Wexford,Rental Property,931
+Wexford County Council,Wexford,Renovation,770
+Wexford County Council,Wexford,With Relatives,220
+Wexford County Council,Wexford,Deceased,766
+Wexford County Council,Wexford,Nursing Home / Hospital,367
+Wexford County Council,Wexford,For Sale,679
+Wexford County Council,Wexford,Farmhouse,279
+Wexford County Council,Wexford,Emigrated,75
+Wexford County Council,Wexford,New Build,196
+Wexford County Council,Wexford,Other reason / Not Stated,857
+Wicklow County Council,Wicklow,Rental Property,587
+Wicklow County Council,Wicklow,Renovation,572
+Wicklow County Council,Wicklow,With Relatives,99
+Wicklow County Council,Wicklow,Deceased,429
+Wicklow County Council,Wicklow,Nursing Home / Hospital,271
+Wicklow County Council,Wicklow,For Sale,351
+Wicklow County Council,Wicklow,Farmhouse,113
+Wicklow County Council,Wicklow,Emigrated,29
+Wicklow County Council,Wicklow,New Build,163
+Wicklow County Council,Wicklow,Other reason / Not Stated,720
+Clare County Council,Clare,Rental Property,884
+Clare County Council,Clare,Renovation,726
+Clare County Council,Clare,With Relatives,191
+Clare County Council,Clare,Deceased,939
+Clare County Council,Clare,Nursing Home / Hospital,294
+Clare County Council,Clare,For Sale,401
+Clare County Council,Clare,Farmhouse,668
+Clare County Council,Clare,Emigrated,96
+Clare County Council,Clare,New Build,139
+Clare County Council,Clare,Other reason / Not Stated,741
+Cork City Council,Cork,Rental Property,1125
+Cork City Council,Cork,Renovation,823
+Cork City Council,Cork,With Relatives,109
+Cork City Council,Cork,Deceased,704
+Cork City Council,Cork,Nursing Home / Hospital,487
+Cork City Council,Cork,For Sale,703
+Cork City Council,Cork,Farmhouse,23
+Cork City Council,Cork,Emigrated,50
+Cork City Council,Cork,New Build,88
+Cork City Council,Cork,Other reason / Not Stated,949
+Cork County Council,Cork,Rental Property,1829
+Cork County Council,Cork,Renovation,1734
+Cork County Council,Cork,With Relatives,421
+Cork County Council,Cork,Deceased,2050
+Cork County Council,Cork,Nursing Home / Hospital,785
+Cork County Council,Cork,For Sale,1228
+Cork County Council,Cork,Farmhouse,1297
+Cork County Council,Cork,Emigrated,152
+Cork County Council,Cork,New Build,440
+Cork County Council,Cork,Other reason / Not Stated,2058
+Kerry County Council,Kerry,Rental Property,1605
+Kerry County Council,Kerry,Renovation,1171
+Kerry County Council,Kerry,With Relatives,281
+Kerry County Council,Kerry,Deceased,1787
+Kerry County Council,Kerry,Nursing Home / Hospital,432
+Kerry County Council,Kerry,For Sale,628
+Kerry County Council,Kerry,Farmhouse,871
+Kerry County Council,Kerry,Emigrated,155
+Kerry County Council,Kerry,New Build,247
+Kerry County Council,Kerry,Other reason / Not Stated,1310
+Limerick City and County Council,Limerick,Rental Property,982
+Limerick City and County Council,Limerick,Renovation,914
+Limerick City and County Council,Limerick,With Relatives,217
+Limerick City and County Council,Limerick,Deceased,1107
+Limerick City and County Council,Limerick,Nursing Home / Hospital,450
+Limerick City and County Council,Limerick,For Sale,634
+Limerick City and County Council,Limerick,Farmhouse,517
+Limerick City and County Council,Limerick,Emigrated,184
+Limerick City and County Council,Limerick,New Build,183
+Limerick City and County Council,Limerick,Other reason / Not Stated,1453
+Tipperary County Council,Tipperary,Rental Property,1159
+Tipperary County Council,Tipperary,Renovation,901
+Tipperary County Council,Tipperary,With Relatives,209
+Tipperary County Council,Tipperary,Deceased,1156
+Tipperary County Council,Tipperary,Nursing Home / Hospital,466
+Tipperary County Council,Tipperary,For Sale,636
+Tipperary County Council,Tipperary,Farmhouse,591
+Tipperary County Council,Tipperary,Emigrated,89
+Tipperary County Council,Tipperary,New Build,152
+Tipperary County Council,Tipperary,Other reason / Not Stated,985
+Waterford City and County Council,Waterford,Rental Property,821
+Waterford City and County Council,Waterford,Renovation,601
+Waterford City and County Council,Waterford,With Relatives,99
+Waterford City and County Council,Waterford,Deceased,606
+Waterford City and County Council,Waterford,Nursing Home / Hospital,286
+Waterford City and County Council,Waterford,For Sale,444
+Waterford City and County Council,Waterford,Farmhouse,203
+Waterford City and County Council,Waterford,Emigrated,42
+Waterford City and County Council,Waterford,New Build,78
+Waterford City and County Council,Waterford,Other reason / Not Stated,691
+Galway City Council,Galway,Rental Property,949
+Galway City Council,Galway,Renovation,332
+Galway City Council,Galway,With Relatives,128
+Galway City Council,Galway,Deceased,182
+Galway City Council,Galway,Nursing Home / Hospital,112
+Galway City Council,Galway,For Sale,311
+Galway City Council,Galway,Farmhouse,14
+Galway City Council,Galway,Emigrated,18
+Galway City Council,Galway,New Build,78
+Galway City Council,Galway,Other reason / Not Stated,614
+Galway County Council,Galway,Rental Property,1411
+Galway County Council,Galway,Renovation,1181
+Galway County Council,Galway,With Relatives,342
+Galway County Council,Galway,Deceased,2111
+Galway County Council,Galway,Nursing Home / Hospital,446
+Galway County Council,Galway,For Sale,645
+Galway County Council,Galway,Farmhouse,1136
+Galway County Council,Galway,Emigrated,245
+Galway County Council,Galway,New Build,434
+Galway County Council,Galway,Other reason / Not Stated,852
+Leitrim County Council,Leitrim,Rental Property,527
+Leitrim County Council,Leitrim,Renovation,349
+Leitrim County Council,Leitrim,With Relatives,61
+Leitrim County Council,Leitrim,Deceased,612
+Leitrim County Council,Leitrim,Nursing Home / Hospital,139
+Leitrim County Council,Leitrim,For Sale,256
+Leitrim County Council,Leitrim,Farmhouse,475
+Leitrim County Council,Leitrim,Emigrated,26
+Leitrim County Council,Leitrim,New Build,71
+Leitrim County Council,Leitrim,Other reason / Not Stated,291
+Mayo County Council,Mayo,Rental Property,1562
+Mayo County Council,Mayo,Renovation,1083
+Mayo County Council,Mayo,With Relatives,295
+Mayo County Council,Mayo,Deceased,2209
+Mayo County Council,Mayo,Nursing Home / Hospital,457
+Mayo County Council,Mayo,For Sale,713
+Mayo County Council,Mayo,Farmhouse,1274
+Mayo County Council,Mayo,Emigrated,173
+Mayo County Council,Mayo,New Build,271
+Mayo County Council,Mayo,Other reason / Not Stated,885
+Roscommon County Council,Roscommon,Rental Property,667
+Roscommon County Council,Roscommon,Renovation,559
+Roscommon County Council,Roscommon,With Relatives,132
+Roscommon County Council,Roscommon,Deceased,1054
+Roscommon County Council,Roscommon,Nursing Home / Hospital,241
+Roscommon County Council,Roscommon,For Sale,435
+Roscommon County Council,Roscommon,Farmhouse,576
+Roscommon County Council,Roscommon,Emigrated,50
+Roscommon County Council,Roscommon,New Build,118
+Roscommon County Council,Roscommon,Other reason / Not Stated,447
+Sligo County Council,Sligo,Rental Property,723
+Sligo County Council,Sligo,Renovation,494
+Sligo County Council,Sligo,With Relatives,129
+Sligo County Council,Sligo,Deceased,677
+Sligo County Council,Sligo,Nursing Home / Hospital,211
+Sligo County Council,Sligo,For Sale,355
+Sligo County Council,Sligo,Farmhouse,596
+Sligo County Council,Sligo,Emigrated,60
+Sligo County Council,Sligo,New Build,83
+Sligo County Council,Sligo,Other reason / Not Stated,626
+Cavan County Council,Cavan,Rental Property,748
+Cavan County Council,Cavan,Renovation,443
+Cavan County Council,Cavan,With Relatives,121
+Cavan County Council,Cavan,Deceased,801
+Cavan County Council,Cavan,Nursing Home / Hospital,213
+Cavan County Council,Cavan,For Sale,422
+Cavan County Council,Cavan,Farmhouse,471
+Cavan County Council,Cavan,Emigrated,49
+Cavan County Council,Cavan,New Build,140
+Cavan County Council,Cavan,Other reason / Not Stated,615
+Donegal County Council,Donegal,Rental Property,2221
+Donegal County Council,Donegal,Renovation,1024
+Donegal County Council,Donegal,With Relatives,315
+Donegal County Council,Donegal,Deceased,2162
+Donegal County Council,Donegal,Nursing Home / Hospital,450
+Donegal County Council,Donegal,For Sale,868
+Donegal County Council,Donegal,Farmhouse,671
+Donegal County Council,Donegal,Emigrated,181
+Donegal County Council,Donegal,New Build,346
+Donegal County Council,Donegal,Other reason / Not Stated,1377
+Monaghan County Council,Monaghan,Rental Property,615
+Monaghan County Council,Monaghan,Renovation,326
+Monaghan County Council,Monaghan,With Relatives,85
+Monaghan County Council,Monaghan,Deceased,580
+Monaghan County Council,Monaghan,Nursing Home / Hospital,149
+Monaghan County Council,Monaghan,For Sale,170
+Monaghan County Council,Monaghan,Farmhouse,389
+Monaghan County Council,Monaghan,Emigrated,43
+Monaghan County Council,Monaghan,New Build,117
+Monaghan County Council,Monaghan,Other reason / Not Stated,319

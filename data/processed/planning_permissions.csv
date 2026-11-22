@@ -1,0 +1,193 @@
+region,year,dwelling_type,permissions,units,floor_area_000_sqm,avg_floor_area_sqm
+Border,2018,Apartments,40.0,81.0,6.0,80.0
+Border,2018,Multi development houses,31.0,351.0,41.0,116.0
+Border,2018,One off houses,728.0,728.0,182.0,250.0
+Border,2019,Apartments,33.0,89.0,7.0,78.0
+Border,2019,Multi development houses,41.0,733.0,96.0,130.0
+Border,2019,One off houses,764.0,764.0,186.0,243.0
+Border,2020,Apartments,34.0,161.0,12.0,77.0
+Border,2020,Multi development houses,45.0,634.0,71.0,112.0
+Border,2020,One off houses,682.0,682.0,168.0,246.0
+Border,2021,Apartments,38.0,109.0,10.0,90.0
+Border,2021,Multi development houses,33.0,369.0,46.0,124.0
+Border,2021,One off houses,1161.0,1161.0,297.0,256.0
+Border,2022,Apartments,51.0,139.0,10.0,75.0
+Border,2022,Multi development houses,48.0,505.0,62.0,123.0
+Border,2022,One off houses,1075.0,1075.0,272.0,253.0
+Border,2023,Apartments,67.0,342.0,27.0,80.0
+Border,2023,Multi development houses,55.0,631.0,72.0,114.0
+Border,2023,One off houses,824.0,824.0,199.0,242.0
+Border,2024,Apartments,59.0,225.0,16.0,73.0
+Border,2024,Multi development houses,52.0,620.0,71.0,114.0
+Border,2024,One off houses,900.0,900.0,212.0,235.0
+Border,2025,Apartments,98.0,579.0,46.0,79.0
+Border,2025,Multi development houses,71.0,1264.0,140.0,111.0
+Border,2025,One off houses,838.0,838.0,197.0,236.0
+Dublin,2018,Apartments,204.0,5409.0,468.0,86.0
+Dublin,2018,Multi development houses,152.0,3341.0,449.0,134.0
+Dublin,2018,One off houses,407.0,407.0,79.0,194.0
+Dublin,2019,Apartments,244.0,12795.0,1002.0,78.0
+Dublin,2019,Multi development houses,117.0,1901.0,255.0,134.0
+Dublin,2019,One off houses,382.0,382.0,65.0,170.0
+Dublin,2020,Apartments,227.0,18026.0,1310.0,73.0
+Dublin,2020,Multi development houses,90.0,1405.0,188.0,134.0
+Dublin,2020,One off houses,309.0,309.0,53.0,171.0
+Dublin,2021,Apartments,215.0,18908.0,1257.0,66.0
+Dublin,2021,Multi development houses,73.0,904.0,123.0,136.0
+Dublin,2021,One off houses,289.0,289.0,52.0,180.0
+Dublin,2022,Apartments,165.0,10803.0,776.0,72.0
+Dublin,2022,Multi development houses,52.0,1104.0,143.0,130.0
+Dublin,2022,One off houses,249.0,249.0,47.0,188.0
+Dublin,2023,Apartments,186.0,13833.0,1056.0,76.0
+Dublin,2023,Multi development houses,97.0,4483.0,500.0,111.0
+Dublin,2023,One off houses,293.0,293.0,50.0,170.0
+Dublin,2024,Apartments,180.0,6122.0,488.0,80.0
+Dublin,2024,Multi development houses,85.0,1955.0,231.0,118.0
+Dublin,2024,One off houses,309.0,309.0,55.0,176.0
+Dublin,2025,Apartments,181.0,7366.0,624.0,85.0
+Dublin,2025,Multi development houses,94.0,1704.0,199.0,117.0
+Dublin,2025,One off houses,282.0,282.0,47.0,168.0
+Mid-East,2018,Apartments,130.0,1297.0,110.0,85.0
+Mid-East,2018,Multi development houses,102.0,3992.0,509.0,128.0
+Mid-East,2018,One off houses,828.0,828.0,196.0,237.0
+Mid-East,2019,Apartments,136.0,2488.0,210.0,84.0
+Mid-East,2019,Multi development houses,127.0,3876.0,486.0,125.0
+Mid-East,2019,One off houses,783.0,783.0,182.0,232.0
+Mid-East,2020,Apartments,152.0,3290.0,277.0,84.0
+Mid-East,2020,Multi development houses,137.0,4554.0,553.0,121.0
+Mid-East,2020,One off houses,940.0,940.0,224.0,239.0
+Mid-East,2021,Apartments,149.0,2373.0,201.0,85.0
+Mid-East,2021,Multi development houses,82.0,2334.0,282.0,121.0
+Mid-East,2021,One off houses,1248.0,1248.0,295.0,236.0
+Mid-East,2022,Apartments,129.0,1970.0,166.0,84.0
+Mid-East,2022,Multi development houses,127.0,2934.0,340.0,116.0
+Mid-East,2022,One off houses,848.0,848.0,198.0,233.0
+Mid-East,2023,Apartments,107.0,1821.0,151.0,83.0
+Mid-East,2023,Multi development houses,88.0,2656.0,319.0,120.0
+Mid-East,2023,One off houses,618.0,618.0,144.0,234.0
+Mid-East,2024,Apartments,163.0,2552.0,210.0,82.0
+Mid-East,2024,Multi development houses,135.0,3236.0,394.0,122.0
+Mid-East,2024,One off houses,558.0,558.0,126.0,226.0
+Mid-East,2025,Apartments,144.0,2128.0,164.0,77.0
+Mid-East,2025,Multi development houses,124.0,4773.0,545.0,114.0
+Mid-East,2025,One off houses,569.0,569.0,125.0,220.0
+Mid-West,2018,Apartments,45.0,121.0,8.0,70.0
+Mid-West,2018,Multi development houses,52.0,849.0,111.0,131.0
+Mid-West,2018,One off houses,669.0,669.0,157.0,235.0
+Mid-West,2019,Apartments,58.0,207.0,16.0,79.0
+Mid-West,2019,Multi development houses,53.0,874.0,106.0,121.0
+Mid-West,2019,One off houses,637.0,637.0,151.0,236.0
+Mid-West,2020,Apartments,56.0,468.0,35.0,74.0
+Mid-West,2020,Multi development houses,52.0,882.0,100.0,114.0
+Mid-West,2020,One off houses,536.0,536.0,124.0,232.0
+Mid-West,2021,Apartments,82.0,675.0,55.0,81.0
+Mid-West,2021,Multi development houses,70.0,1227.0,146.0,119.0
+Mid-West,2021,One off houses,932.0,932.0,221.0,238.0
+Mid-West,2022,Apartments,71.0,786.0,60.0,77.0
+Mid-West,2022,Multi development houses,59.0,1417.0,161.0,113.0
+Mid-West,2022,One off houses,980.0,980.0,231.0,236.0
+Mid-West,2023,Apartments,80.0,602.0,42.0,70.0
+Mid-West,2023,Multi development houses,63.0,1572.0,175.0,111.0
+Mid-West,2023,One off houses,620.0,620.0,142.0,228.0
+Mid-West,2024,Apartments,85.0,638.0,53.0,82.0
+Mid-West,2024,Multi development houses,71.0,1574.0,179.0,114.0
+Mid-West,2024,One off houses,568.0,568.0,129.0,227.0
+Mid-West,2025,Apartments,94.0,577.0,45.0,78.0
+Mid-West,2025,Multi development houses,44.0,728.0,84.0,115.0
+Mid-West,2025,One off houses,644.0,644.0,150.0,233.0
+Midlands,2018,Apartments,36.0,94.0,7.0,70.0
+Midlands,2018,Multi development houses,46.0,895.0,108.0,121.0
+Midlands,2018,One off houses,439.0,439.0,113.0,256.0
+Midlands,2019,Apartments,42.0,144.0,15.0,103.0
+Midlands,2019,Multi development houses,49.0,1011.0,120.0,119.0
+Midlands,2019,One off houses,502.0,502.0,127.0,253.0
+Midlands,2020,Apartments,53.0,521.0,41.0,79.0
+Midlands,2020,Multi development houses,50.0,1176.0,131.0,111.0
+Midlands,2020,One off houses,479.0,479.0,124.0,259.0
+Midlands,2021,Apartments,47.0,642.0,54.0,84.0
+Midlands,2021,Multi development houses,29.0,780.0,87.0,111.0
+Midlands,2021,One off houses,610.0,610.0,157.0,258.0
+Midlands,2022,Apartments,42.0,375.0,30.0,81.0
+Midlands,2022,Multi development houses,27.0,664.0,73.0,110.0
+Midlands,2022,One off houses,604.0,604.0,157.0,259.0
+Midlands,2023,Apartments,59.0,561.0,51.0,90.0
+Midlands,2023,Multi development houses,41.0,1175.0,126.0,107.0
+Midlands,2023,One off houses,441.0,441.0,106.0,240.0
+Midlands,2024,Apartments,54.0,574.0,46.0,81.0
+Midlands,2024,Multi development houses,46.0,1769.0,195.0,110.0
+Midlands,2024,One off houses,396.0,396.0,95.0,240.0
+Midlands,2025,Apartments,44.0,340.0,27.0,79.0
+Midlands,2025,Multi development houses,51.0,1628.0,192.0,118.0
+Midlands,2025,One off houses,436.0,436.0,101.0,231.0
+South-East,2018,Apartments,64.0,184.0,14.0,75.0
+South-East,2018,Multi development houses,66.0,1390.0,171.0,123.0
+South-East,2018,One off houses,651.0,651.0,156.0,239.0
+South-East,2019,Apartments,84.0,610.0,54.0,88.0
+South-East,2019,Multi development houses,86.0,2383.0,308.0,129.0
+South-East,2019,One off houses,722.0,722.0,170.0,236.0
+South-East,2020,Apartments,74.0,609.0,48.0,79.0
+South-East,2020,Multi development houses,54.0,1071.0,124.0,115.0
+South-East,2020,One off houses,703.0,703.0,166.0,236.0
+South-East,2021,Apartments,94.0,741.0,54.0,73.0
+South-East,2021,Multi development houses,55.0,1609.0,188.0,117.0
+South-East,2021,One off houses,1038.0,1038.0,251.0,242.0
+South-East,2022,Apartments,69.0,441.0,37.0,83.0
+South-East,2022,Multi development houses,52.0,1612.0,197.0,122.0
+South-East,2022,One off houses,929.0,929.0,222.0,239.0
+South-East,2023,Apartments,72.0,565.0,46.0,81.0
+South-East,2023,Multi development houses,63.0,1626.0,187.0,115.0
+South-East,2023,One off houses,603.0,603.0,137.0,227.0
+South-East,2024,Apartments,76.0,678.0,54.0,79.0
+South-East,2024,Multi development houses,47.0,1251.0,138.0,110.0
+South-East,2024,One off houses,544.0,544.0,121.0,223.0
+South-East,2025,Apartments,80.0,620.0,53.0,86.0
+South-East,2025,Multi development houses,51.0,1158.0,135.0,116.0
+South-East,2025,One off houses,674.0,674.0,148.0,220.0
+South-West,2018,Apartments,119.0,1522.0,144.0,94.0
+South-West,2018,Multi development houses,114.0,2848.0,366.0,129.0
+South-West,2018,One off houses,900.0,900.0,204.0,226.0
+South-West,2019,Apartments,147.0,1588.0,121.0,76.0
+South-West,2019,Multi development houses,125.0,2489.0,321.0,129.0
+South-West,2019,One off houses,961.0,961.0,216.0,225.0
+South-West,2020,Apartments,104.0,1246.0,93.0,75.0
+South-West,2020,Multi development houses,90.0,2284.0,268.0,118.0
+South-West,2020,One off houses,858.0,858.0,190.0,221.0
+South-West,2021,Apartments,139.0,2135.0,164.0,77.0
+South-West,2021,Multi development houses,89.0,1538.0,183.0,119.0
+South-West,2021,One off houses,1085.0,1085.0,246.0,227.0
+South-West,2022,Apartments,135.0,1989.0,148.0,74.0
+South-West,2022,Multi development houses,74.0,1835.0,219.0,119.0
+South-West,2022,One off houses,1136.0,1136.0,260.0,228.0
+South-West,2023,Apartments,135.0,3168.0,264.0,83.0
+South-West,2023,Multi development houses,94.0,2151.0,260.0,121.0
+South-West,2023,One off houses,862.0,862.0,194.0,225.0
+South-West,2024,Apartments,132.0,1690.0,131.0,78.0
+South-West,2024,Multi development houses,92.0,2855.0,331.0,116.0
+South-West,2024,One off houses,741.0,741.0,162.0,219.0
+South-West,2025,Apartments,135.0,2287.0,174.0,76.0
+South-West,2025,Multi development houses,117.0,2824.0,318.0,113.0
+South-West,2025,One off houses,764.0,764.0,166.0,217.0
+West,2018,Apartments,54.0,267.0,24.0,89.0
+West,2018,Multi development houses,59.0,817.0,110.0,134.0
+West,2018,One off houses,859.0,859.0,214.0,249.0
+West,2019,Apartments,47.0,977.0,91.0,93.0
+West,2019,Multi development houses,45.0,674.0,88.0,130.0
+West,2019,One off houses,871.0,871.0,215.0,247.0
+West,2020,Apartments,42.0,341.0,27.0,80.0
+West,2020,Multi development houses,34.0,411.0,53.0,130.0
+West,2020,One off houses,785.0,785.0,195.0,249.0
+West,2021,Apartments,46.0,689.0,53.0,77.0
+West,2021,Multi development houses,41.0,459.0,56.0,122.0
+West,2021,One off houses,1136.0,1136.0,286.0,252.0
+West,2022,Apartments,33.0,220.0,18.0,81.0
+West,2022,Multi development houses,38.0,459.0,60.0,130.0
+West,2022,One off houses,1103.0,1103.0,275.0,249.0
+West,2023,Apartments,43.0,595.0,46.0,77.0
+West,2023,Multi development houses,40.0,412.0,49.0,118.0
+West,2023,One off houses,771.0,771.0,184.0,238.0
+West,2024,Apartments,81.0,715.0,62.0,87.0
+West,2024,Multi development houses,64.0,1041.0,124.0,119.0
+West,2024,One off houses,890.0,890.0,214.0,241.0
+West,2025,Apartments,95.0,462.0,35.0,75.0
+West,2025,Multi development houses,68.0,1441.0,160.0,111.0
+West,2025,One off houses,888.0,888.0,210.0,236.0

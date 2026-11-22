@@ -1,0 +1,209 @@
+county,census_year,tenure,households
+Clare,2022,All types of occupancy,46441
+Cork,2022,All types of occupancy,210918
+Cavan,2022,All types of occupancy,28776
+Carlow,2022,All types of occupancy,22174
+Donegal,2022,All types of occupancy,61575
+Dublin,2022,All types of occupancy,518490
+Galway,2022,All types of occupancy,98654
+Kildare,2022,All types of occupancy,82543
+Kilkenny,2022,All types of occupancy,36685
+Kerry,2022,All types of occupancy,58179
+Longford,2022,All types of occupancy,16206
+Louth,2022,All types of occupancy,49332
+Limerick,2022,All types of occupancy,76295
+Leitrim,2022,All types of occupancy,13589
+Laois,2022,All types of occupancy,31112
+Meath,2022,All types of occupancy,72549
+Monaghan,2022,All types of occupancy,22855
+Mayo,2022,All types of occupancy,51996
+Offaly,2022,All types of occupancy,28702
+Roscommon,2022,All types of occupancy,25975
+Sligo,2022,All types of occupancy,26801
+Tipperary,2022,All types of occupancy,62056
+Waterford,2022,All types of occupancy,47682
+Wicklow,2022,All types of occupancy,54059
+Westmeath,2022,All types of occupancy,34003
+Wexford,2022,All types of occupancy,59081
+Clare,2022,Owner occupied with loan or mortgage,13187
+Cork,2022,Owner occupied with loan or mortgage,59148
+Cavan,2022,Owner occupied with loan or mortgage,8184
+Carlow,2022,Owner occupied with loan or mortgage,5987
+Donegal,2022,Owner occupied with loan or mortgage,14712
+Dublin,2022,Owner occupied with loan or mortgage,148511
+Galway,2022,Owner occupied with loan or mortgage,27017
+Kildare,2022,Owner occupied with loan or mortgage,32264
+Kilkenny,2022,Owner occupied with loan or mortgage,10831
+Kerry,2022,Owner occupied with loan or mortgage,13202
+Longford,2022,Owner occupied with loan or mortgage,3631
+Louth,2022,Owner occupied with loan or mortgage,15891
+Limerick,2022,Owner occupied with loan or mortgage,19619
+Leitrim,2022,Owner occupied with loan or mortgage,3348
+Laois,2022,Owner occupied with loan or mortgage,10509
+Meath,2022,Owner occupied with loan or mortgage,30191
+Monaghan,2022,Owner occupied with loan or mortgage,6385
+Mayo,2022,Owner occupied with loan or mortgage,12950
+Offaly,2022,Owner occupied with loan or mortgage,8599
+Roscommon,2022,Owner occupied with loan or mortgage,6850
+Sligo,2022,Owner occupied with loan or mortgage,6674
+Tipperary,2022,Owner occupied with loan or mortgage,16256
+Waterford,2022,Owner occupied with loan or mortgage,12602
+Wicklow,2022,Owner occupied with loan or mortgage,18424
+Westmeath,2022,Owner occupied with loan or mortgage,10013
+Wexford,2022,Owner occupied with loan or mortgage,16222
+Clare,2022,Owner occupied without loan or mortgage,20188
+Cork,2022,Owner occupied without loan or mortgage,80370
+Cavan,2022,Owner occupied without loan or mortgage,11735
+Carlow,2022,Owner occupied without loan or mortgage,8375
+Donegal,2022,Owner occupied without loan or mortgage,28395
+Dublin,2022,Owner occupied without loan or mortgage,154543
+Galway,2022,Owner occupied without loan or mortgage,38180
+Kildare,2022,Owner occupied without loan or mortgage,26634
+Kilkenny,2022,Owner occupied without loan or mortgage,15425
+Kerry,2022,Owner occupied without loan or mortgage,27458
+Longford,2022,Owner occupied without loan or mortgage,6214
+Louth,2022,Owner occupied without loan or mortgage,16985
+Limerick,2022,Owner occupied without loan or mortgage,29689
+Leitrim,2022,Owner occupied without loan or mortgage,6276
+Laois,2022,Owner occupied without loan or mortgage,11602
+Meath,2022,Owner occupied without loan or mortgage,24331
+Monaghan,2022,Owner occupied without loan or mortgage,9759
+Mayo,2022,Owner occupied without loan or mortgage,24929
+Offaly,2022,Owner occupied without loan or mortgage,11941
+Roscommon,2022,Owner occupied without loan or mortgage,12395
+Sligo,2022,Owner occupied without loan or mortgage,11297
+Tipperary,2022,Owner occupied without loan or mortgage,26768
+Waterford,2022,Owner occupied without loan or mortgage,18207
+Wicklow,2022,Owner occupied without loan or mortgage,20049
+Westmeath,2022,Owner occupied without loan or mortgage,12975
+Wexford,2022,Owner occupied without loan or mortgage,24998
+Clare,2022,Rented from private landlord,6457
+Cork,2022,Rented from private landlord,37618
+Cavan,2022,Rented from private landlord,4614
+Carlow,2022,Rented from private landlord,3584
+Donegal,2022,Rented from private landlord,8377
+Dublin,2022,Rented from private landlord,125146
+Galway,2022,Rented from private landlord,20075
+Kildare,2022,Rented from private landlord,12339
+Kilkenny,2022,Rented from private landlord,4647
+Kerry,2022,Rented from private landlord,8377
+Longford,2022,Rented from private landlord,2807
+Louth,2022,Rented from private landlord,7443
+Limerick,2022,Rented from private landlord,13497
+Leitrim,2022,Rented from private landlord,2002
+Laois,2022,Rented from private landlord,4003
+Meath,2022,Rented from private landlord,9079
+Monaghan,2022,Rented from private landlord,3420
+Mayo,2022,Rented from private landlord,7885
+Offaly,2022,Rented from private landlord,3758
+Roscommon,2022,Rented from private landlord,3563
+Sligo,2022,Rented from private landlord,4428
+Tipperary,2022,Rented from private landlord,8336
+Waterford,2022,Rented from private landlord,7595
+Wicklow,2022,Rented from private landlord,7191
+Westmeath,2022,Rented from private landlord,6122
+Wexford,2022,Rented from private landlord,8269
+Clare,2022,Rented from a local authority,2929
+Cork,2022,Rented from a local authority,18346
+Cavan,2022,Rented from a local authority,2124
+Carlow,2022,Rented from a local authority,2170
+Donegal,2022,Rented from a local authority,5102
+Dublin,2022,Rented from a local authority,49306
+Galway,2022,Rented from a local authority,5185
+Kildare,2022,Rented from a local authority,5649
+Kilkenny,2022,Rented from a local authority,3102
+Kerry,2022,Rented from a local authority,4683
+Longford,2022,Rented from a local authority,2035
+Louth,2022,Rented from a local authority,4992
+Limerick,2022,Rented from a local authority,5693
+Leitrim,2022,Rented from a local authority,936
+Laois,2022,Rented from a local authority,2634
+Meath,2022,Rented from a local authority,4361
+Monaghan,2022,Rented from a local authority,1764
+Mayo,2022,Rented from a local authority,2533
+Offaly,2022,Rented from a local authority,2211
+Roscommon,2022,Rented from a local authority,1484
+Sligo,2022,Rented from a local authority,2367
+Tipperary,2022,Rented from a local authority,5660
+Waterford,2022,Rented from a local authority,5405
+Wicklow,2022,Rented from a local authority,4970
+Westmeath,2022,Rented from a local authority,2475
+Wexford,2022,Rented from a local authority,5076
+Clare,2022,Rented from a voluntary body,574
+Cork,2022,Rented from a voluntary body,3237
+Cavan,2022,Rented from a voluntary body,244
+Carlow,2022,Rented from a voluntary body,606
+Donegal,2022,Rented from a voluntary body,608
+Dublin,2022,Rented from a voluntary body,10833
+Galway,2022,Rented from a voluntary body,1295
+Kildare,2022,Rented from a voluntary body,1458
+Kilkenny,2022,Rented from a voluntary body,716
+Kerry,2022,Rented from a voluntary body,691
+Longford,2022,Rented from a voluntary body,219
+Louth,2022,Rented from a voluntary body,1137
+Limerick,2022,Rented from a voluntary body,1242
+Leitrim,2022,Rented from a voluntary body,119
+Laois,2022,Rented from a voluntary body,715
+Meath,2022,Rented from a voluntary body,782
+Monaghan,2022,Rented from a voluntary body,232
+Mayo,2022,Rented from a voluntary body,533
+Offaly,2022,Rented from a voluntary body,399
+Roscommon,2022,Rented from a voluntary body,150
+Sligo,2022,Rented from a voluntary body,383
+Tipperary,2022,Rented from a voluntary body,1006
+Waterford,2022,Rented from a voluntary body,975
+Wicklow,2022,Rented from a voluntary body,601
+Westmeath,2022,Rented from a voluntary body,261
+Wexford,2022,Rented from a voluntary body,864
+Clare,2022,Occupied free of rent,940
+Cork,2022,Occupied free of rent,3807
+Cavan,2022,Occupied free of rent,618
+Carlow,2022,Occupied free of rent,383
+Donegal,2022,Occupied free of rent,1733
+Dublin,2022,Occupied free of rent,6067
+Galway,2022,Occupied free of rent,2040
+Kildare,2022,Occupied free of rent,1134
+Kilkenny,2022,Occupied free of rent,718
+Kerry,2022,Occupied free of rent,1458
+Longford,2022,Occupied free of rent,273
+Louth,2022,Occupied free of rent,705
+Limerick,2022,Occupied free of rent,1428
+Leitrim,2022,Occupied free of rent,396
+Laois,2022,Occupied free of rent,554
+Meath,2022,Occupied free of rent,1181
+Monaghan,2022,Occupied free of rent,567
+Mayo,2022,Occupied free of rent,1248
+Offaly,2022,Occupied free of rent,563
+Roscommon,2022,Occupied free of rent,508
+Sligo,2022,Occupied free of rent,542
+Tipperary,2022,Occupied free of rent,1376
+Waterford,2022,Occupied free of rent,820
+Wicklow,2022,Occupied free of rent,919
+Westmeath,2022,Occupied free of rent,563
+Wexford,2022,Occupied free of rent,1323
+Clare,2022,Not stated,2166
+Cork,2022,Not stated,8392
+Cavan,2022,Not stated,1257
+Carlow,2022,Not stated,1069
+Donegal,2022,Not stated,2648
+Dublin,2022,Not stated,24084
+Galway,2022,Not stated,4862
+Kildare,2022,Not stated,3065
+Kilkenny,2022,Not stated,1246
+Kerry,2022,Not stated,2310
+Longford,2022,Not stated,1027
+Louth,2022,Not stated,2179
+Limerick,2022,Not stated,5127
+Leitrim,2022,Not stated,512
+Laois,2022,Not stated,1095
+Meath,2022,Not stated,2624
+Monaghan,2022,Not stated,728
+Mayo,2022,Not stated,1918
+Offaly,2022,Not stated,1231
+Roscommon,2022,Not stated,1025
+Sligo,2022,Not stated,1110
+Tipperary,2022,Not stated,2654
+Waterford,2022,Not stated,2078
+Wicklow,2022,Not stated,1905
+Westmeath,2022,Not stated,1594
+Wexford,2022,Not stated,2329

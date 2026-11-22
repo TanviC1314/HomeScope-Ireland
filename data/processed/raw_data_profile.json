@@ -1,0 +1,542 @@
+{
+  "NDQ06": {
+    "rows": 8064,
+    "columns": [
+      "STATISTIC",
+      "STATISTIC Label",
+      "TLIST(Q1)",
+      "Quarter",
+      "C02342V02816",
+      "Type of House",
+      "C03789V04537",
+      "Local Authority",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "STATISTIC Label": "str",
+      "TLIST(Q1)": "str",
+      "Quarter": "str",
+      "C02342V02816": "str",
+      "Type of House": "str",
+      "C03789V04537": "str",
+      "Local Authority": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "HSM13": {
+    "rows": 14592,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(M1)",
+      "Month",
+      "C02424V02930",
+      "Residential Units Commenced",
+      "C03789V04537",
+      "Local Authority",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(M1)": "str",
+      "Month": "str",
+      "C02424V02930": "str",
+      "Residential Units Commenced": "str",
+      "C03789V04537": "str",
+      "Local Authority": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "BHA13": {
+    "rows": 7344,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Year",
+      "C03788V04538",
+      "NUTS 3 Region",
+      "C01912V02351",
+      "Type of Dwelling",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Year": "str",
+      "C03788V04538": "str",
+      "NUTS 3 Region": "str",
+      "C01912V02351": "str",
+      "Type of Dwelling": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 5866
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "F1003": {
+    "rows": 1458,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Census Year",
+      "C02779V03348",
+      "County",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Census Year": "str",
+      "C02779V03348": "str",
+      "County": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "PEA01": {
+    "rows": 6237,
+    "columns": [
+      "STATISTIC",
+      "STATISTIC Label",
+      "TLIST(A1)",
+      "Year",
+      "C02076V02508",
+      "Age Group",
+      "C02199V02655",
+      "Sex",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "STATISTIC Label": "str",
+      "TLIST(A1)": "str",
+      "Year": "str",
+      "C02076V02508": "str",
+      "Age Group": "str",
+      "C02199V02655": "str",
+      "Sex": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 114
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "PEA15": {
+    "rows": 608,
+    "columns": [
+      "STATISTIC",
+      "STATISTIC Label",
+      "TLIST(A1)",
+      "Year",
+      "C02541V03076",
+      "Component",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "STATISTIC Label": "str",
+      "TLIST(A1)": "str",
+      "Year": "str",
+      "C02541V03076": "str",
+      "Component": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 144
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "F2001": {
+    "rows": 432,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Census Year",
+      "C03788V04538",
+      "County",
+      "C02254V02726",
+      "Persons per Household",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Census Year": "str",
+      "C03788V04538": "str",
+      "County": "str",
+      "C02254V02726": "str",
+      "Persons per Household": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "F2020": {
+    "rows": 6510,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "CensusYear",
+      "C04104V04868",
+      "County and City",
+      "C02010V02440",
+      "Type of Private Household",
+      "C02758V03328",
+      "Housing Stock",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "CensusYear": "str",
+      "C04104V04868": "str",
+      "County and City": "str",
+      "C02010V02440": "str",
+      "Type of Private Household": "str",
+      "C02758V03328": "str",
+      "Housing Stock": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 2170
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "F2004": {
+    "rows": 32400,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Census Year",
+      "C02699V03267",
+      "Nature of Occupancy",
+      "C03408V04103",
+      "Persons per room",
+      "C03788V04538",
+      "County",
+      "C02076V03371",
+      "Age Group of Reference Person",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Census Year": "str",
+      "C02699V03267": "str",
+      "Nature of Occupancy": "str",
+      "C03408V04103": "str",
+      "Persons per room": "str",
+      "C03788V04538": "str",
+      "County": "str",
+      "C02076V03371": "str",
+      "Age Group of Reference Person": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "F2014": {
+    "rows": 352,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Census Year",
+      "C03789V04537",
+      "Administrative Counties",
+      "C03974V04732",
+      "Reason for Vacancy",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Census Year": "str",
+      "C03789V04537": "str",
+      "Administrative Counties": "str",
+      "C03974V04732": "str",
+      "Reason for Vacancy": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "VAC14": {
+    "rows": 279,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(Q1)",
+      "Quarter",
+      "C03789V04537",
+      "Local Authority",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(Q1)": "str",
+      "Quarter": "str",
+      "C03789V04537": "str",
+      "Local Authority": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "VAC23": {
+    "rows": 93,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(Q1)",
+      "Quarter",
+      "C03789V04537",
+      "Local Authority",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(Q1)": "str",
+      "Quarter": "str",
+      "C03789V04537": "str",
+      "Local Authority": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "RIQ02": {
+    "rows": 95046,
+    "columns": [
+      "STATISTIC Label",
+      "Quarter",
+      "Number of Bedrooms",
+      "Property Type",
+      "Location",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC Label": "str",
+      "Quarter": "str",
+      "Number of Bedrooms": "str",
+      "Property Type": "str",
+      "Location": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 21836
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "HPM09": {
+    "rows": 20880,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(M1)",
+      "Month",
+      "C02803V03373",
+      "Type of Residential Property",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(M1)": "str",
+      "Month": "str",
+      "C02803V03373": "str",
+      "Type of Residential Property": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 2960
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "RAA02": {
+    "rows": 12150,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Year",
+      "C03788V04538",
+      "County",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Year": "str",
+      "C03788V04538": "str",
+      "County": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "TRS38": {
+    "rows": 124,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "TLIST(A1)",
+      "Rental Year",
+      "C03882V04633",
+      "Local Authority",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "TLIST(A1)": "str",
+      "Rental Year": "str",
+      "C03882V04633": "str",
+      "Local Authority": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {},
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  },
+  "SCA10": {
+    "rows": 8424,
+    "columns": [
+      "STATISTIC",
+      "Statistic Label",
+      "C02451V02968",
+      "County",
+      "C03493V04221",
+      "Household Structure",
+      "C03492V04220",
+      "Number of Children",
+      "TLIST(A1)",
+      "Year",
+      "UNIT",
+      "VALUE"
+    ],
+    "dtypes": {
+      "STATISTIC": "str",
+      "Statistic Label": "str",
+      "C02451V02968": "str",
+      "County": "str",
+      "C03493V04221": "str",
+      "Household Structure": "str",
+      "C03492V04220": "str",
+      "Number of Children": "str",
+      "TLIST(A1)": "str",
+      "Year": "str",
+      "UNIT": "str",
+      "VALUE": "str"
+    },
+    "missing_by_column": {
+      "VALUE": 7600
+    },
+    "duplicate_rows": 0,
+    "validation_problems": [],
+    "non_numeric_values": 0,
+    "status": "ok"
+  }
+}
