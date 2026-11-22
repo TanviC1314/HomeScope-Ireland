@@ -66,7 +66,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** 100 x (Census 2022 population / Census 2016 population - 1).
 - **Source data:** CSO F1003 (Census population by county)
 - **Reference period:** Census April 2016 to April 2022.
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Census-to-Census only: no annual county population estimates are used.
 
 ### Population growth (national, annual)  
@@ -75,7 +75,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** 100 x (population in April t / population in April t-1 - 1).
 - **Source data:** CSO PEA01, PEA15
 - **Reference period:** April 1950 to April 2026 (latest years are provisional estimates).
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Estimates are revised when new Census data become available.
 
 ### Household growth (county, Census)  
@@ -84,7 +84,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** 100 x (private households 2022 / private households 2016 - 1).
 - **Source data:** CSO F2001
 - **Reference period:** Census April 2016 to April 2022.
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Households form from existing stock and from new homes; household growth reflects supply as well as demand.
 
 ## Pressure
@@ -133,7 +133,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** CSO RPPI (base January 2015 = 100); 12-month % change as published; change vs the pre-crisis peak = latest / peak - 1.
 - **Source data:** CSO HPM09
 - **Reference period:** Monthly 2005 January to latest month (2026 September).
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** An index, not a euro price. County-level prices are not published by the CSO; regional series cover houses only.
 
 ### Rent as % of disposable income (measured)  
@@ -171,7 +171,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** Dwellings vacant in each of six consecutive years / all vacant dwellings x 100.
 - **Source data:** CSO VAC23, VAC14
 - **Reference period:** Q4 2024.
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Persistently vacant dwellings are the group where reuse is most plausible but they are not necessarily habitable.
 
 ### Census vacancy rate  
@@ -200,7 +200,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** Households with children identified as in need of social housing (latest year) / Census 2022 households x 1,000.
 - **Source data:** CSO SCA10, F2001
 - **Reference period:** Latest year in SCA10 (county breakdown); households Census 2022.
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Covers only households with children, so it understates total need; the numerator year and denominator year differ.
 
 ### Social rented share of households  
@@ -209,7 +209,7 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Calculation:** (Households renting from a local authority + voluntary body) / all households x 100.
 - **Source data:** CSO F2004
 - **Reference period:** Census April 2022.
-- **Assumptions:** None.
+- **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Census snapshot of the existing social stock - not a measure of need or recent delivery.
 
 ## Homelessness
