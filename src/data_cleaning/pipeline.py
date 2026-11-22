@@ -18,7 +18,7 @@ log = get_logger("cleaning")
 # processed table name -> description
 PROCESSED_TABLES = [
     "dim_county", "dim_local_authority", "dim_region", "data_sources",
-    "completions_quarterly", "commencements_monthly", "planning_permissions",
+    "completions_quarterly", "commencements_monthly", "planning_permissions", "planning_permissions_national",
     "population_census", "population_national", "households_census", "housing_stock_census", "tenure_census",
     "vacancy_estimates", "long_term_vacancy", "vacancy_reasons_census",
     "rents_rtb", "property_price_index", "household_income_county", "household_income_national", "rent_to_income_la",
@@ -88,6 +88,7 @@ def run(write_docs: bool = True) -> Dict[str, pd.DataFrame]:
     t["completions_quarterly"] = C.clean_completions(_raw("NDQ06"), report)
     t["commencements_monthly"] = C.clean_commencements(_raw("HSM13"), report)
     t["planning_permissions"] = C.clean_planning(_raw("BHA13"), report)
+    t["planning_permissions_national"] = C.clean_planning_national(_raw("BHA13"), report)
     t["population_census"] = C.clean_population_census(_raw("F1003"), report)
     t["population_national"] = C.clean_population_national(_raw("PEA01"), _raw("PEA15"), report)
     t["households_census"] = C.clean_households(_raw("F2001"), report)

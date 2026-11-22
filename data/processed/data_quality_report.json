@@ -152,6 +152,30 @@
     "action": "comparisons with completions are made at NUTS3 level (counties aggregated)"
   },
   {
+    "dataset": "BHA13",
+    "check": "regional coverage",
+    "status": "info",
+    "affected": 0,
+    "detail": "regional values are only published from 2018; earlier years are blank in the source",
+    "action": "regional comparisons are limited to the published years; the national series goes back further"
+  },
+  {
+    "dataset": "BHA13",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['year', 'dwelling_type']",
+    "action": ""
+  },
+  {
+    "dataset": "BHA13",
+    "check": "range check 'units' [0, 150000]",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all values within plausible range",
+    "action": ""
+  },
+  {
     "dataset": "F1003",
     "check": "county names standardised",
     "status": "pass",

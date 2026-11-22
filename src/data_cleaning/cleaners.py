@@ -150,6 +150,9 @@ def clean_planning(raw: pd.DataFrame, report: Optional[QualityReport] = None) ->
     df["year"] = df["year"].astype(int)
     wide = df.pivot_table(index=["region", "year", "dwelling_type"], columns="measure", values="value", aggfunc="first").reset_index()
     wide.columns.name = None
+    for col in ("permissions", "units", "floor_area_000_sqm", "avg_floor_area_sqm"):
+        if col not in wide.columns:      # measure absent from this extract: keep the column, all missing
+            wide[col] = np.nan
     nat = wide[wide["region"] == "Ireland"]
     regions = wide[wide["region"].isin(ref.NUTS3_REGIONS)].copy()
     # reconcile regions to published national total for a recent year where all data exist
@@ -168,7 +171,30 @@ def clean_planning(raw: pd.DataFrame, report: Optional[QualityReport] = None) ->
     if report is not None:
         report.add(ds, "geographic grain", "info", 0, "planning permissions are published by NUTS3 region only",
                    "comparisons with completions are made at NUTS3 level (counties aggregated)")
+        first = int(regions["year"].min()) if len(regions) else None
+        report.add(ds, "regional coverage", "info", 0, f"regional values are only published from {first}; earlier years are blank in the source",
+                   "regional comparisons are limited to the published years; the national series goes back further")
     return regions[["region", "year", "dwelling_type", "permissions", "units", "floor_area_000_sqm", "avg_floor_area_sqm"]].reset_index(drop=True)
+
+
+def clean_planning_national(raw: pd.DataFrame, report: Optional[QualityReport] = None) -> pd.DataFrame:
+    """BHA13 national ('Ireland') rows -> year, dwelling_type, permissions, units (long national series)."""
+    ds = "BHA13"
+    df = raw.copy()
+    df["value"] = _num(df["VALUE"])
+    df["measure"] = df[_stat_col(df)].map({"Planning Permissions Granted": "permissions", "Units for which Permission Granted": "units"})
+    df = df[(df["NUTS 3 Region"] == "Ireland") & df["measure"].notna()].rename(columns={"Type of Dwelling": "dwelling_type", "Year": "year"})
+    df["year"] = df["year"].astype(int)
+    wide = df.pivot_table(index=["year", "dwelling_type"], columns="measure", values="value", aggfunc="first").reset_index()
+    wide.columns.name = None
+    # The one-off / multi-development split only exists from 2018, while 'All houses' and 'Apartments' cover every year:
+    # build the long national series from those two so totals are comparable across the whole period.
+    wide = wide[wide["dwelling_type"].isin(["All houses", "Apartments"])].copy()
+    wide["dwelling_type"] = wide["dwelling_type"].replace({"All houses": "Houses"})
+    wide = wide.dropna(subset=["units"])
+    wide = check_duplicates(wide, ["year", "dwelling_type"], ds, report)
+    wide = check_range(wide, "units", 0, 150000, ds, report)      # the 2006-07 boom peak was ~90k units
+    return wide[["year", "dwelling_type", "permissions", "units"]].reset_index(drop=True)
 
 
 # ----------------------------------------------------------------------------- demand

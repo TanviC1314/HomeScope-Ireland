@@ -104,11 +104,15 @@ def _count_rows(content: bytes) -> int:
 def download_static(src: S.DatasetSource, force: bool = False) -> Dict[str, Any]:
     dest: Path = RAW_DIR / src.raw_subdir / src.raw_filename
     dest.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        local_path = str(dest.relative_to(ROOT)).replace("\\", "/")
+    except ValueError:  # destination outside the project (e.g. tests)
+        local_path = str(dest)
     entry: Dict[str, Any] = {
         "key": src.key, "title": src.title, "provider": src.provider, "theme": src.theme,
         "landing_url": src.landing_url, "download_url": src.download_url, "licence": src.licence,
         "granularity": src.granularity, "use_in_project": src.use_in_project, "notes": src.notes,
-        "local_path": str(dest.relative_to(ROOT)).replace("\\", "/"),
+        "local_path": local_path,
     }
     if dest.exists() and not force:
         log.info("%-8s already present - skipping (use --force to refresh)", src.key)

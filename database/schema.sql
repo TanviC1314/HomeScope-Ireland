@@ -87,6 +87,15 @@ CREATE TABLE IF NOT EXISTS fact_planning_permissions (
     PRIMARY KEY (region_id, year, dwelling_type)
 );
 
+-- BHA13: national planning permissions for new dwellings (long series; regional values exist only from 2018)
+CREATE TABLE IF NOT EXISTS fact_planning_permissions_national (
+    year           SMALLINT     NOT NULL,
+    dwelling_type  VARCHAR(30)  NOT NULL,
+    permissions    INTEGER      CHECK (permissions >= 0),
+    units          INTEGER      CHECK (units >= 0),
+    PRIMARY KEY (year, dwelling_type)
+);
+
 -- ------------------------------------------------------------------ population and households
 CREATE TABLE IF NOT EXISTS fact_population_census (
     county_id                  INTEGER   NOT NULL REFERENCES dim_county (county_id),

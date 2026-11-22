@@ -39,6 +39,7 @@ TABLE_SQL: Dict[str, str] = {
                                  FROM fact_commencements f {_LA}""",
     "planning_permissions": """SELECT r.region_name AS region, p.year, p.dwelling_type, p.permissions, p.units, p.floor_area_000_sqm, p.avg_floor_area_sqm
                                FROM fact_planning_permissions p JOIN dim_region r ON r.region_id = p.region_id""",
+    "planning_permissions_national": "SELECT year, dwelling_type, permissions, units FROM fact_planning_permissions_national",
     "population_census": """SELECT c.county_name AS county, p.census_year, p.population, p.change_since_previous, p.pct_change_since_previous
                             FROM fact_population_census p JOIN dim_county c ON c.county_id = p.county_id""",
     "population_national": "SELECT year, population_thousand, births_thousand, deaths_thousand, emigrants_thousand, immigrants_thousand, "
