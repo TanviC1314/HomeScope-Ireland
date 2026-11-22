@@ -104,6 +104,22 @@ def planning_vs_completions_window(t: Tables, start: int, end: int, lag: int = 0
 
 
 # ------------------------------------------------------------------------------------ demand
+def completions_vs_household_growth(t: Tables, first_year: int = 2016, last_year: int = 2021) -> pd.DataFrame:
+    """Completions in ``first_year..last_year`` compared with households added between Census 2016 and 2022.
+
+    Calendar years 2016-2021 approximate the April-to-April Census interval; new households can also
+    occupy existing (e.g. previously vacant) dwellings, so this is a rough supply-vs-need comparison.
+    """
+    ac = annual_completions(t, "county")
+    ac = ac[ac["year"].between(first_year, last_year) & ~ac["is_partial_year"]]
+    comp = ac.groupby("county", as_index=False)["completions"].sum()
+    cg = census_growth(t)[["county", "households_added", "stock_added", "population_start", "population_end"]]
+    out = comp.merge(cg, on="county")
+    out["completions_per_added_household"] = out["completions"] / out["households_added"]
+    out.attrs["years"] = (first_year, last_year)
+    return out.sort_values("completions_per_added_household").reset_index(drop=True)
+
+
 def census_growth(t: Tables, y0: int = 2016, y1: int = 2022) -> pd.DataFrame:
     """County population, household and housing-stock growth between two Census years (all measured values)."""
     pop = t["population_census"].pivot(index="county", columns="census_year", values="population")
