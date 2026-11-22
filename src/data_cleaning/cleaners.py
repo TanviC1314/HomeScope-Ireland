@@ -512,7 +512,8 @@ def clean_homelessness(directory: Path | str, report: Optional[QualityReport] = 
     frames, problems = [], []
     for f in files:
         try:
-            d = pd.read_csv(f, encoding="utf-8-sig")
+            # some reports write thousands as "4,258": parse them as numbers instead of silently losing them
+            d = pd.read_csv(f, encoding="utf-8-sig", thousands=",")
             d = d.rename(columns=lambda c: _HOMELESS_RENAME.get(c.strip(), c.strip()))
             d["report_month"] = parse_homeless_month(f.name)
             frames.append(d)
@@ -527,8 +528,14 @@ def clean_homelessness(directory: Path | str, report: Optional[QualityReport] = 
         report.add(ds, "non-region rows (totals) removed", "info" if dropped else "pass", dropped, "regions standardised to 9 Dept. regions")
     df = df.dropna(subset=["region"])
     numeric = [c for c in df.columns if c not in ("region", "report_month")]
-    df[numeric] = df[numeric].apply(pd.to_numeric, errors="coerce")
-    df["total_persons"] = df["adults_total"] + df["dependants"].fillna(0)
+    before_na = int(df[numeric].isna().sum().sum())
+    df[numeric] = df[numeric].apply(lambda s: pd.to_numeric(s.astype(str).str.replace(",", "", regex=False).str.strip(), errors="coerce")
+                                    if s.dtype == object else s)
+    if report is not None:
+        lost = int(df[numeric].isna().sum().sum()) - before_na
+        report.add(ds, "values lost during numeric conversion", "pass" if lost == 0 else "warning", lost,
+                   "thousands separators (e.g. '4,258') are parsed; no value is silently dropped")
+    df["total_persons"] = df["adults_total"] + df["dependants"]
     df = check_duplicates(df, ["region", "report_month"], ds, report)
     df = check_range(df, "adults_total", 0, 20000, ds, report)
     per_month = df.groupby("report_month")["region"].nunique()
@@ -539,6 +546,12 @@ def clean_homelessness(directory: Path | str, report: Optional[QualityReport] = 
         gaps = [d.strftime("%Y-%m") for d in full if d not in per_month.index]
         report.add(ds, "month gaps", "pass" if not gaps else "info", len(gaps), f"missing months: {gaps}" if gaps else "contiguous monthly series",
                    "" if not gaps else "gaps are left as gaps")
+        national = df.groupby("report_month")["total_persons"].sum().sort_index()
+        jump = national.pct_change().abs()
+        big = jump[jump > 0.20]
+        report.add(ds, "month-on-month anomaly check (national total, >20% jump)", "pass" if big.empty else "warning", len(big),
+                   "no implausible month-to-month jumps" if big.empty else f"jumps at {[d.strftime('%Y-%m') for d in big.index]}",
+                   "" if big.empty else "investigate source layout changes")
         report.add(ds, "column harmonisation", "info", 0, "report layouts changed over time (e.g. citizenship columns added 2022; 'Child Dependants' renamed)",
                    "common columns harmonised; optional columns kept where present")
     keep = ["region", "report_month", "adults_total", "adults_male", "adults_female", "adults_18_24", "adults_25_44", "adults_45_64",
