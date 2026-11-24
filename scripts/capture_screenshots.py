@@ -27,14 +27,17 @@ PAGES = [
     ("06_insights", "insights", 3300),
     ("07_policy_simulator", "simulator", 2300),
     ("08_data_and_methodology", "methodology", 1500),
+    ("09_affordability_index", "affordability_index", 4300),
 ]
 
 
-def capture(base_url: str, channel: str) -> None:
+def capture(base_url: str, channel: str, only: str = "") -> None:
     OUT.mkdir(exist_ok=True)
     with sync_playwright() as p:
         browser = p.chromium.launch(channel=channel, headless=True)
         for name, path, height in PAGES:
+            if only and only not in name:
+                continue
             page = browser.new_page(viewport={"width": 1440, "height": height}, device_scale_factor=1)
             page.goto(f"{base_url.rstrip('/')}/{path}", wait_until="networkidle")
             page.wait_for_selector('[data-testid="stMain"], section.main', timeout=60000)
@@ -49,5 +52,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--url", default="http://localhost:8511")
     ap.add_argument("--channel", default="msedge", help="msedge or chrome")
+    ap.add_argument("--only", default="", help="capture only pages whose file name contains this text")
     a = ap.parse_args()
-    capture(a.url, a.channel)
+    capture(a.url, a.channel, a.only)

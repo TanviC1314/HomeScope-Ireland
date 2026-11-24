@@ -44,7 +44,7 @@ Ireland has had rapidly rising rents and prices, record homelessness and persist
 | Data analysis | pandas, NumPy, scikit-learn (reserved for Phase 2 forecasting) |
 | Database | PostgreSQL 16 (Docker Compose), SQLAlchemy, psycopg2 |
 | Visualisation | Streamlit, Plotly (Matplotlib available for notebooks) |
-| Quality | pytest (113 tests), Git, GitHub |
+| Quality | pytest (140 tests), Git, GitHub |
 | Packaging | Docker / Docker Compose |
 
 ## 5. Architecture
@@ -62,7 +62,7 @@ data/raw  (never modified)  ──►  src/data_cleaning   standardise, reconcil
                                                                   │   (PostgreSQL when reachable, CSV otherwise)
                          src/indicators  ·  src/analysis (insights, scenarios)
                                                                   │
-                                                         dashboard (Streamlit, 8 pages)
+                                                         dashboard (Streamlit, 9 pages)
 ```
 
 ```
@@ -76,9 +76,9 @@ HomeScope-Ireland/
 │   ├── indicators/                   calculations, county scorecard, documented registry
 │   ├── analysis/                     insights generator, scenario simulator
 │   ├── visualisation/ · utils/       (shared helpers / paths, logging, ITM->WGS84 conversion)
-├── dashboard/                        app.py, views/ (8 pages), components/ (theme, charts, data)
-├── tests/                            113 tests
-├── docs/                             DATA_CATALOGUE, DATA_QUALITY, INDICATORS, SQL_RESULTS
+├── dashboard/                        app.py, views/ (9 pages), components/ (theme, charts, data)
+├── tests/                            140 tests
+├── docs/                             DATA_CATALOGUE, DATA_QUALITY, INDICATORS, AFFORDABILITY_INDEX, SQL_RESULTS
 ├── screenshots/ · notebooks/ · scripts/
 └── Dockerfile · docker-compose.yml · requirements*.txt · .env.example
 ```
@@ -141,6 +141,7 @@ Every indicator has a documented calculation, source data, reference period, ass
 | Planning-to-completion comparison | Completions in year Y / units permitted in Y minus lag (NUTS3 region) - a comparison ratio, *not* a conversion rate |
 | Vacancy rate | Vacant dwellings / dwelling stock, summed from local-authority counts - *vacant is not available* |
 | County pressure flags | Count (0-6) of six indicators in which a county is in the most-pressured quartile. **No weights, no composite score** |
+| **Affordability Pressure Index** (Phase 2) | Relative 0-100 county ranking: weighted average of four min-max standardised components (tenant rent burden 35%, rent vs income 25%, rent rise vs income 20%, regional house-price growth 20%). Weights are adjustable in the app and a sensitivity analysis shows how much rankings depend on them. Full method: **[docs/AFFORDABILITY_INDEX.md](docs/AFFORDABILITY_INDEX.md)** |
 
 ## 12. Dashboard screenshots
 
@@ -152,8 +153,10 @@ Every indicator has a documented calculation, source data, reference period, ass
 | Housing Supply | Vacancy and Housing Needs |
 | ![Insights](screenshots/06_insights.png) | ![Simulator](screenshots/07_policy_simulator.png) |
 | Insights and Recommendations | Policy Scenario Simulator (hypothetical) |
+| ![Affordability Index](screenshots/09_affordability_index.png) | |
+| Affordability Index (Phase 2): adjustable weights, map, sensitivity analysis | |
 
-Pages: National Housing Overview, County Comparison, Housing Affordability, Housing Supply, Vacancy and Housing Needs, Insights and Recommendations, Policy Scenario Simulator, Data and Methodology. Filters cover county, year, period, indicator, bedrooms, property type, dwelling type and planning lag.
+Pages: National Housing Overview, County Comparison, Housing Affordability, **Affordability Index (Phase 2)**, Housing Supply, Vacancy and Housing Needs, Insights and Recommendations, Policy Scenario Simulator, Data and Methodology. Filters cover county, year, period, indicator, bedrooms, property type, dwelling type and planning lag.
 
 ## 13. Actual findings
 
@@ -222,7 +225,7 @@ Set `HOMESCOPE_DATA_BACKEND=csv|postgres|auto` to choose the data source (defaul
 
 ## 18. Future enhancements
 
-Planned over the next seven days (see **[FUTURE_ENHANCEMENTS.md](FUTURE_ENHANCEMENTS.md)**): Day 2 advanced affordability index; Day 3 supply-demand gap; Day 4 price forecasting; Day 5 vacancy reuse opportunity analysis; Day 6 advanced housing map; Day 7 automated pipeline and monthly reporting.
+Phase 2 progress (see **[FUTURE_ENHANCEMENTS.md](FUTURE_ENHANCEMENTS.md)**): Day 2 advanced affordability index is **done**. Still planned: Day 3 supply-demand gap; Day 4 price forecasting; Day 5 vacancy reuse opportunity analysis; Day 6 advanced housing map; Day 7 automated pipeline and monthly reporting.
 
 ---
 
