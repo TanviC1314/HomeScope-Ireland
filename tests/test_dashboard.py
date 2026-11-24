@@ -14,7 +14,7 @@ from streamlit.testing.v1 import AppTest  # noqa: E402
 from src.indicators import calc  # noqa: E402
 from src.utils.paths import ROOT  # noqa: E402
 
-VIEWS = ["national_overview", "county_comparison", "affordability", "supply", "vacancy_needs", "insights", "simulator", "methodology"]
+VIEWS = ["national_overview", "county_comparison", "affordability", "affordability_index", "supply", "vacancy_needs", "insights", "simulator", "methodology"]
 
 
 @pytest.fixture(autouse=True)
@@ -170,3 +170,40 @@ def test_methodology_lists_sources_indicators_and_limitations(tables):
     assert len(at.tabs) == 4
     body = text(at)
     assert "Vacant is not available" in body and "not a forecast" in body.lower() or "hypothetical" in body.lower()
+
+
+# ----------------------------------------------------------------------------- affordability index page
+def test_affordability_index_page_shows_ranking_and_matches_calculation(tables):
+    from src.indicators import affordability_index as ai
+
+    at = run("affordability_index")
+    assert not at.exception, [e.value for e in at.exception]
+    expected = ai.ranked_table(tables)
+    body = text(at)
+    assert expected.iloc[0]["county"] in body                      # highest-pressure county named in the headline cards
+    assert "relative" in body.lower() and "not a forecast" in body.lower()
+    assert len(at.slider) == 4                                      # one weight slider per component
+    assert "Sensitivity" in " ".join(h.value for h in at.subheader)
+
+
+def test_affordability_index_weights_change_the_ranking(tables):
+    from src.indicators import affordability_index as ai
+
+    at = run("affordability_index")
+    # put all weight on regional price growth: the highest-pressure county must change to the top price-growth county
+    for sl in at.slider:
+        sl.set_value(100 if "price" in sl.label.lower() else 0)
+    at.run()
+    assert not at.exception, [e.value for e in at.exception]
+    comp = ai.build_components(tables)
+    top_price = comp.loc[comp["price_growth_pct"] == comp["price_growth_pct"].max(), "county"]   # regional ties: all counties of that region
+    assert any(c in text(at) for c in top_price)
+
+
+def test_affordability_index_all_zero_weights_fall_back_to_defaults(tables):
+    at = run("affordability_index")
+    for sl in at.slider:
+        sl.set_value(0)
+    at.run()
+    assert not at.exception, [e.value for e in at.exception]
+    assert any("All weights are zero" in m.value for m in at.markdown)
