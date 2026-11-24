@@ -130,6 +130,26 @@ _LIST: List[Indicator] = [
               "Rents (RIQ02), TRS38, NDQ06, F1003, F2001, F2020, SCA10", "Mixed: see each component indicator.",
               "Equal treatment of all six indicators; quartile thresholds computed across the 26 counties. No weights, no composite score.",
               "Relative, not absolute: a county can be flagged even when conditions are good by international standards. Quartile boundaries are arbitrary by nature."),
+    Indicator("affordability_pressure_index", "Housing Affordability Pressure Index", "Affordability", "derived",
+              "Four components per county: (1) median rent as % of tenant disposable income (TRS38), (2) annual average rent as % of disposable income per person, "
+              "(3) rise in annual rent since Q4 2019 as % of income per person = 100 x 12 x (rent_latest - rent_Q4_2019) / income per person, "
+              "(4) % change in the CSO regional house-price index (houses) since Dec 2019. Each is min-max standardised across the 26 counties to 0-100 "
+              "(0 = lowest pressure, 100 = highest). Index = 0.35 x (1) + 0.25 x (2) + 0.20 x (3) + 0.20 x (4), a 0-100 relative score; rank 1 = least affordable.",
+              "CSO TRS38, RIQ02 (RTB), RAA02, HPM09", "Rents: Q4 2019 to latest quarter; income: latest year; burden: 2024; prices: Dec 2019 to latest month.",
+              "Weights are a documented judgement, not estimated from data: the directly measured tenant rent burden gets the largest weight, the two rent-vs-income "
+              "lenses 0.45 in total, prices 0.20. The dashboard lets the user change them. Euro rent rise (not % growth) is used so that counties that started with low rents "
+              "do not score high merely from a low base.",
+              "Relative ranking only (not an absolute affordability threshold, not a forecast). No county price levels exist, so prices enter as REGIONAL growth shared by all "
+              "counties in a region. Per-person income overstates burdens. Component weights drive rankings: see the sensitivity indicator. Mortgage affordability is not covered."),
+    Indicator("affordability_index_sensitivity", "Affordability index sensitivity analysis", "Affordability", "estimate",
+              "Rank stability of the index under (a) six named weighting scenarios, (b) dropping each component in turn (weights renormalised), (c) three standardisation methods "
+              "(min-max, z-score, percentile rank), (d) 5,000 random weight sets: flat Dirichlet (any weighting equally likely) and Dirichlet concentrated around the baseline weights "
+              "(concentration 50). Reported as rank ranges (5th-95th percentile), share of draws in the top 5, and Spearman rank correlation with the baseline.",
+              "CSO TRS38, RIQ02 (RTB), RAA02, HPM09 (through the index components)", "Same as the index.",
+              "Random weights are uniform over the weight simplex (flat) or centred on the baseline (local); they represent uncertainty about how to weight, not statistical sampling error. "
+              "Fixed seed (42) so results are reproducible.",
+              "Shows how much the ranking depends on analyst choices; it does not validate the index against any external measure of affordability. "
+              "Components are correlated and some (regional prices) have only eight distinct values."),
 ]
 
 INDICATORS: Dict[str, Indicator] = {i.id: i for i in _LIST}
