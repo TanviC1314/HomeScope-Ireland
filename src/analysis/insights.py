@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 
 from src.indicators import calculations as calc
+from src.indicators import demand_gap as dg
 
 Tables = Dict[str, pd.DataFrame]
 
@@ -317,9 +318,32 @@ def _pressure(t: Tables) -> Optional[Insight]:
         2025, list(top["county"]), "derived", "Multiple (see indicator registry)")
 
 
+def _demand_gap(t: Tables) -> Optional[Insight]:
+    kpis = dg.gap_kpis(t)
+    if kpis["latest_gap"] is None:
+        return None
+    yr = kpis["latest_year"]
+    gap = kpis["latest_gap"]
+    cum = kpis["cumulative_gap_since_2017"]
+    demand = kpis["avg_annual_demand"]
+    supply = kpis["avg_annual_supply"]
+    direction = "shortfall" if gap > 0 else "surplus"
+    return Insight(
+        "supply_demand_gap", "Demand", "supply_demand_gap",
+        f"In {yr} estimated household demand (central scenario) was {_fmt(demand)} dwellings against {_fmt(supply)} completions, "
+        f"a {direction} of {_fmt(abs(gap))} units. "
+        f"The cumulative {direction} since 2017 is an estimated {_fmt(abs(cum))} dwellings (central scenario, full years only).",
+        "Ireland", f"2017-{yr}",
+        f"An annual {direction} accumulates over time and cannot be closed by a single good year of output; "
+        "the central scenario uses observed migration; the high scenario (150% of observed net migration) widens the gap further.",
+        "Examine the county breakdown to identify where demand is growing fastest relative to recent completions, "
+        "and test whether current commencement levels are on a path to close the central scenario gap.",
+        yr, [], "estimate", "CSO PEA15, PEA08, NDQ06, F2001, F2020")
+
+
 _BUILDERS: List[Callable[[Tables], Optional[Insight]]] = [
     _completions, _household_need, _supply_laggards, _households_outpace_stock, _rent_growth, _rent_burden, _prices, _planning,
-    _commencements, _vacancy, _vacancy_reasons, _social_need, _homelessness, _population, _pressure,
+    _commencements, _vacancy, _vacancy_reasons, _social_need, _homelessness, _population, _pressure, _demand_gap,
 ]
 
 

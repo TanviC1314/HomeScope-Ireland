@@ -87,6 +87,24 @@ Every indicator on the dashboard, with its calculation, sources, reference perio
 - **Assumptions:** No additional assumptions: published figures are used as-is.
 - **Limitations:** Households form from existing stock and from new homes; household growth reflects supply as well as demand.
 
+### Housing supply-demand gap (national)  
+`supply_demand_gap` · **estimate**
+
+- **Calculation:** Total annual household demand - new dwelling completions. Demand = (population change / avg household size) + replacement demand (0.4 % of housing stock). Three scenario bands (low / central / high) vary net migration at 50 % / 100 % / 150 % of the observed PEA15 figure. Positive gap = shortfall; negative = surplus.
+- **Source data:** CSO PEA15 (national population and migration), CSO NDQ06 (completions), CSO F2001 (households), CSO F2020 (housing stock)
+- **Reference period:** Annual 2018 to latest full year (2017 used as population base; partial years flagged).
+- **Assumptions:** Avg household size interpolated linearly between Census 2016 (2.75) and 2022 (2.74). Replacement rate fixed at 0.4 % of Census housing stock (European estimate). Migration scenarios are analytical illustrations, not forecasts.
+- **Limitations:** Population-based demand does not capture housing quality, affordability or location mismatch. Completions are ESB-based proxies. Scenario bands represent migration variation only; natural increase is held at the observed level.
+
+### Housing supply-demand gap (county)  
+`supply_demand_gap_county` · **estimate**
+
+- **Calculation:** County-level gap using PEA08 annual population estimates. Demand = (county population change / county avg household size) + replacement demand (0.4 % of Census 2022 housing stock). Gap = demand - completions.
+- **Source data:** CSO PEA08 (county population estimates), CSO NDQ06 (completions), CSO F2001, F2020
+- **Reference period:** Annual 2018 to latest available year in PEA08.
+- **Assumptions:** County household size interpolated between Census years. Replacement stock fixed at Census 2022 level per county. Single central scenario (observed population change).
+- **Limitations:** Annual county estimates are rounded to the nearest hundred persons (CSO PEA08 methodology), introducing rounding uncertainty in the household-demand calculation. County completions are aggregated from local authorities; small counties can show large swings from individual large developments. No scenario band at county level.
+
 ## Pressure
 
 ### Household growth minus housing-stock growth  
