@@ -14,7 +14,7 @@ from streamlit.testing.v1 import AppTest  # noqa: E402
 from src.indicators import calc  # noqa: E402
 from src.utils.paths import ROOT  # noqa: E402
 
-VIEWS = ["national_overview", "county_comparison", "affordability", "affordability_index", "supply", "vacancy_needs", "insights", "simulator", "methodology"]
+VIEWS = ["national_overview", "county_comparison", "affordability", "affordability_index", "supply", "demand_gap", "vacancy_needs", "insights", "simulator", "methodology"]
 
 
 @pytest.fixture(autouse=True)
@@ -207,3 +207,27 @@ def test_affordability_index_all_zero_weights_fall_back_to_defaults(tables):
     at.run()
     assert not at.exception, [e.value for e in at.exception]
     assert any("All weights are zero" in m.value for m in at.markdown)
+
+
+# ----------------------------------------------------------------------------- demand-gap page
+def test_demand_gap_page_shows_kpis_and_scenario_note(tables):
+    from src.indicators import demand_gap as dg
+
+    at = run("demand_gap")
+    assert not at.exception, [e.value for e in at.exception]
+    body = text(at)
+    kpis = dg.gap_kpis(tables)
+    # Latest-year gap is shown in the KPI strip
+    assert f"{kpis['latest_gap']:+,}" in body or str(abs(kpis["latest_gap"])) in body
+    # Methodology note is on the page
+    assert "not forecasts" in body.lower() or "not a forecast" in body.lower()
+    assert "central" in body.lower() and "scenario" in body.lower()
+
+
+def test_demand_gap_county_selectbox_works(tables):
+    at = run("demand_gap")
+    sel = at.selectbox(key="dg_county_year")
+    avail = [opt for opt in sel.options]
+    assert len(avail) >= 2
+    sel.select(avail[-1]).run()
+    assert not at.exception, [e.value for e in at.exception]

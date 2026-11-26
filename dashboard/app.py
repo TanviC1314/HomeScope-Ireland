@@ -24,6 +24,7 @@ PAGES = {
         st.Page("views/affordability.py", title="Housing Affordability", icon="💶"),
         st.Page("views/affordability_index.py", title="Affordability Index", icon="📊"),
         st.Page("views/supply.py", title="Housing Supply", icon="🏗️"),
+        st.Page("views/demand_gap.py", title="Supply-Demand Gap", icon="📉"),
         st.Page("views/vacancy_needs.py", title="Vacancy and Housing Needs", icon="🔑"),
     ],
     "Decision support": [
