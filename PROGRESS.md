@@ -13,6 +13,7 @@
 | G. Scenario simulator | Done | Hypothetical, documented assumptions, renovation capped by an assumed suitable pool |
 | H. Testing | Done | 113 pytest tests: loading, cleaning, KPIs vs raw source files, scenarios, PostgreSQL, dashboard (AppTest) |
 | J. Phase 2, Day 2 - Affordability Index | Done | `src/indicators/affordability_index.py`: 4-component county index, adjustable weights, sensitivity analysis (6 scenarios, drop-one, 3 standardisations, 5,000 random weight sets), dashboard page, `docs/AFFORDABILITY_INDEX.md`, 27 new tests (140 total) |
+| K. Phase 2, Day 3 - Supply-Demand Gap | Done | `src/indicators/demand_gap.py`: national gap with low/central/high scenario bands, county gap from PEA08, demand decomposition; CSO PEA08 data cleaned and loaded (260 rows); dashboard page "Supply-Demand Gap", `docs/DEMAND_GAP.md`, 17 new tests (159 total) |
 | I. Documentation | Done | README, DATA_CATALOGUE, DATA_QUALITY, INDICATORS, SQL_RESULTS, screenshots |
 
 ## Decisions and findings worth knowing

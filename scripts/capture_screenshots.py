@@ -28,6 +28,7 @@ PAGES = [
     ("07_policy_simulator", "simulator", 2300),
     ("08_data_and_methodology", "methodology", 1500),
     ("09_affordability_index", "affordability_index", 4300),
+    ("10_supply_demand_gap", "demand_gap", 3800),
 ]
 
 
