@@ -170,8 +170,8 @@ def test_processed_tables_have_no_duplicate_keys_or_negative_counts(tables):
 
 def test_every_county_present_in_county_level_tables(tables):
     counties = set(tables["dim_county"]["county"])
-    for name in ("completions_quarterly", "population_census", "households_census", "housing_stock_census", "tenure_census",
-                 "vacancy_estimates", "household_income_county", "social_housing_need"):
+    for name in ("completions_quarterly", "population_census", "population_county_estimates", "households_census", "housing_stock_census",
+                 "tenure_census", "vacancy_estimates", "household_income_county", "social_housing_need"):
         assert set(tables[name]["county"]) == counties, name
     assert set(tables["rents_rtb"].query("geography_type == 'county'")["county"]) == counties
 
@@ -185,6 +185,27 @@ def test_reconciles_to_published_national_totals(tables, raw_csv):
     c = tables["completions_quarterly"]
     got = c.assign(q=c["year"].astype(str) + "Q" + c["quarter"].astype(str)).groupby("q")["completions"].sum()
     pd.testing.assert_series_equal(got.sort_index(), expected.sort_index(), check_names=False, check_dtype=False)
+
+
+def test_county_population_estimates_cleaning_converts_thousands_and_reconciles():
+    rows = []
+    for year in ("2022", "2023"):
+        for county, v in (("Ireland", "30.0"), ("Co. Carlow", "10.0"), ("Co. Cavan", "20.0")):
+            rows.append({"Age Group": "All ages", "Sex": "Both sexes", "Year": year, "County": county, "VALUE": v})
+        rows.append({"Age Group": "0 - 4 years", "Sex": "Both sexes", "Year": year, "County": "Co. Carlow", "VALUE": "1.0"})
+        rows.append({"Age Group": "All ages", "Sex": "Male", "Year": year, "County": "Co. Carlow", "VALUE": "5.0"})
+    rep = QualityReport()
+    out = C.clean_population_county_estimates(pd.DataFrame(rows), rep)
+    assert len(out) == 4                                                   # age bands and single-sex rows excluded
+    assert out.loc[(out["county"] == "Carlow") & (out["year"] == 2022), "population"].iloc[0] == 10_000
+    assert not rep.warnings()
+
+
+def test_county_population_estimates_match_national_series(tables):
+    county = tables["population_county_estimates"].groupby("year")["population"].sum()
+    national = tables["population_national"].set_index("year")["population_thousand"] * 1000
+    for year, total in county.items():
+        assert abs(total - national[year]) <= 1300, year                   # county rounding only
 
 
 def test_census_population_matches_raw_state_total(tables, raw_csv):

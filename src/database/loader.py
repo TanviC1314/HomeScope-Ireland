@@ -25,7 +25,7 @@ ALL_TABLES = [
     "fact_homelessness", "fact_social_housing_need_national", "fact_social_housing_need", "fact_rent_to_income_la",
     "fact_household_income_national", "fact_household_income_county", "fact_property_price_index", "fact_rent_rtb",
     "fact_vacancy_reason_census", "fact_long_term_vacancy", "fact_vacancy_estimate", "fact_tenure_census",
-    "fact_housing_stock_census", "fact_households_census", "fact_population_national", "fact_population_census",
+    "fact_housing_stock_census", "fact_households_census", "fact_population_national", "fact_population_county_estimate", "fact_population_census",
     "fact_planning_permissions_national", "fact_planning_permissions", "fact_commencements", "fact_completions",
     "dim_local_authority", "dim_county", "dim_region", "data_source",
 ]
@@ -109,6 +109,7 @@ LOAD_PLAN: List[Tuple[str, str, Builder, List[str]]] = [
      _with_region("NUTS3", ["year", "dwelling_type", "permissions", "units", "floor_area_000_sqm", "avg_floor_area_sqm"]), []),
     ("planning_permissions_national", "fact_planning_permissions_national", _direct, []),
     ("population_census", "fact_population_census", _with_county(["census_year", "population", "change_since_previous", "pct_change_since_previous"]), []),
+    ("population_county_estimates", "fact_population_county_estimate", _with_county(["year", "population"]), []),
     ("population_national", "fact_population_national", _direct, []),
     ("households_census", "fact_households_census", _with_county(["census_year", "households", "persons_in_households", "avg_household_size"]), []),
     ("housing_stock_census", "fact_housing_stock_census",

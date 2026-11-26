@@ -947,6 +947,27 @@
       "title": "Population Estimates (Persons in April) 1950-latest",
       "use_in_project": "National population trend"
     },
+    "PEA08": {
+      "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/PEA08/CSV/1.0/en",
+      "granularity": "County x age x sex x year, April 2017 onwards",
+      "key": "PEA08",
+      "landing_url": "https://data.cso.ie/table/PEA08",
+      "licence": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "local_path": "data/raw/cso/PEA08.csv",
+      "notes": "Annual CSO estimates (thousands, rounded); recent years are preliminary and are revised after each Census.",
+      "official_label": "Estimated Population (Persons in April)",
+      "provider": "Central Statistics Office (CSO)",
+      "publication_updated": "2026-08-24",
+      "reference_period": "2017 to 2026",
+      "retrieved_utc": "2026-11-26T19:50:13+00:00",
+      "rows": 15390,
+      "sha256": "5bbf3ba763293cd2e4f144ec6751ad65c6d23c182556af622b8ba93772f4c0f1",
+      "size_bytes": 2640498,
+      "status": "downloaded",
+      "theme": "demand",
+      "title": "Estimated Population (Persons in April) by County, 2017 onwards",
+      "use_in_project": "County population change for the supply-demand gap"
+    },
     "PEA15": {
       "download_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/PEA15/CSV/1.0/en",
       "granularity": "State x component x year",
@@ -1149,5 +1170,5 @@
     }
   },
   "generated_by": "src.data_collection.downloader",
-  "last_run_utc": "2026-11-22T16:42:24+00:00"
+  "last_run_utc": "2026-11-26T19:50:14+00:00"
 }

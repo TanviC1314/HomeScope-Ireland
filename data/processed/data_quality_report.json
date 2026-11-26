@@ -240,6 +240,62 @@
     "action": "latest year(s) are provisional CSO estimates"
   },
   {
+    "dataset": "PEA08",
+    "check": "county names standardised",
+    "status": "pass",
+    "affected": 0,
+    "detail": "all names map to the 26 counties",
+    "action": ""
+  },
+  {
+    "dataset": "PEA08",
+    "check": "duplicate keys",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no duplicate records on key ['county', 'year']",
+    "action": ""
+  },
+  {
+    "dataset": "PEA08",
+    "check": "missing values",
+    "status": "pass",
+    "affected": 0,
+    "detail": "no missing values in ['population']",
+    "action": ""
+  },
+  {
+    "dataset": "PEA08",
+    "check": "2017: sum of counties = Ireland estimate",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 4,811,100.00 vs published 4,810,900.00 (difference +200.00)",
+    "action": ""
+  },
+  {
+    "dataset": "PEA08",
+    "check": "2022: sum of counties = Ireland estimate",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 5,184,200.00 vs published 5,184,000.00 (difference +200.00)",
+    "action": ""
+  },
+  {
+    "dataset": "PEA08",
+    "check": "2026: sum of counties = Ireland estimate",
+    "status": "pass",
+    "affected": 0,
+    "detail": "computed 5,525,800.00 vs published 5,525,600.00 (difference +200.00)",
+    "action": ""
+  },
+  {
+    "dataset": "PEA08",
+    "check": "estimates",
+    "status": "info",
+    "affected": 0,
+    "detail": "April estimates 2017-2026, published to the nearest 100 persons",
+    "action": "treated as estimates, not counts"
+  },
+  {
     "dataset": "F2001",
     "check": "2022: sum of counties = Ireland households",
     "status": "pass",

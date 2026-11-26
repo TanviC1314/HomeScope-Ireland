@@ -106,6 +106,14 @@ CREATE TABLE IF NOT EXISTS fact_population_census (
     PRIMARY KEY (county_id, census_year)
 );
 
+-- PEA08: annual April population estimates by county (estimates, not Census counts)
+CREATE TABLE IF NOT EXISTS fact_population_county_estimate (
+    county_id   INTEGER   NOT NULL REFERENCES dim_county (county_id),
+    year        SMALLINT  NOT NULL,
+    population  INTEGER   NOT NULL CHECK (population > 0),
+    PRIMARY KEY (county_id, year)
+);
+
 CREATE TABLE IF NOT EXISTS fact_population_national (
     year                         SMALLINT PRIMARY KEY,
     population_thousand          NUMERIC(8, 1),

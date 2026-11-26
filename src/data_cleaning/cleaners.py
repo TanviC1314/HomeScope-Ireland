@@ -249,6 +249,31 @@ def clean_population_national(pea01: pd.DataFrame, pea15: pd.DataFrame, report: 
     return out.reset_index(drop=True)
 
 
+def clean_population_county_estimates(raw: pd.DataFrame, report: Optional[QualityReport] = None) -> pd.DataFrame:
+    """PEA08 -> county, year, population (persons; April estimates, all ages, both sexes)."""
+    ds = "PEA08"
+    df = raw[(raw["Age Group"] == "All ages") & (raw["Sex"] == "Both sexes")].copy()
+    df["population"] = (_num(df["VALUE"]) * 1000).round()       # published in thousands
+    df["year"] = df["Year"].astype(int)
+    national = df[df["County"].map(ref.is_national)].set_index("year")["population"]
+    parts = df[~df["County"].map(ref.is_national)].copy()
+    parts["county"] = parts["County"].map(ref.standardise_county)
+    bad = int(parts["county"].isna().sum())
+    if report is not None:
+        report.add(ds, "county names standardised", "pass" if bad == 0 else "warning", bad, "all names map to the 26 counties")
+    out = parts.dropna(subset=["county"])[["county", "year", "population"]]
+    out = check_duplicates(out, ["county", "year"], ds, report)
+    check_missing(out, ["population"], ds, report)
+    sums = out.groupby("year")["population"].sum()
+    for year in (int(sums.index.min()), 2022, int(sums.index.max())):
+        # each county is rounded to the nearest 100, so allow up to 26 x 50 persons of rounding
+        reconcile(report, ds, f"{year}: sum of counties = Ireland estimate", sums.get(year, np.nan), national.get(year, np.nan), tolerance=1300)
+    if report is not None:
+        report.add(ds, "estimates", "info", 0, f"April estimates {int(out['year'].min())}-{int(out['year'].max())}, published to the nearest 100 persons",
+                   "treated as estimates, not counts")
+    return out.sort_values(["county", "year"]).reset_index(drop=True)
+
+
 def clean_households(raw: pd.DataFrame, report: Optional[QualityReport] = None) -> pd.DataFrame:
     """F2001 -> county, census_year, households, persons_in_households, avg_household_size."""
     ds = "F2001"

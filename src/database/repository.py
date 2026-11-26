@@ -42,6 +42,8 @@ TABLE_SQL: Dict[str, str] = {
     "planning_permissions_national": "SELECT year, dwelling_type, permissions, units FROM fact_planning_permissions_national",
     "population_census": """SELECT c.county_name AS county, p.census_year, p.population, p.change_since_previous, p.pct_change_since_previous
                             FROM fact_population_census p JOIN dim_county c ON c.county_id = p.county_id""",
+    "population_county_estimates": """SELECT c.county_name AS county, p.year, p.population
+                                      FROM fact_population_county_estimate p JOIN dim_county c ON c.county_id = p.county_id""",
     "population_national": "SELECT year, population_thousand, births_thousand, deaths_thousand, emigrants_thousand, immigrants_thousand, "
                            "natural_increase_thousand, net_migration_thousand, population_change_thousand FROM fact_population_national",
     "households_census": """SELECT c.county_name AS county, h.census_year, h.households, h.persons_in_households, h.avg_household_size
